@@ -2,7 +2,7 @@
 
 # SQL Practice Repository
 
-Welcome to the SQL practice repository! This repository contains a collection of SQL queries and exercises to help you practice and improve your SQL skills. Each section covers different levels of complexity, from basic to advanced SQL concepts.
+Welcome to the SQL practice repository! This repository contains a collection of SQL queries and exercises to help you practice and improve your SQL skills. Each section covers different levels of complexity, from queries.basic to advanced SQL concepts.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ practice_sql/
 │
 ├── README.md
 ├── queries/
-│ ├── basic/
+│ ├── queries.basic/
 │ │ ├── 01_select_all.sql
 │ │ ├── 02_select_columns.sql
 │ │ ├── 03_where_clause.sql
@@ -42,7 +42,7 @@ practice_sql/
 │ │ └── ...
 │
 └── solutions/
-├── basic/
+├── queries.basic/
 │ ├── 01_select_all_solution.sql
 │ ├── 02_select_columns_solution.sql
 │ ├── 03_where_clause_solution.sql
@@ -83,7 +83,7 @@ Below is a list of SQL questions you can practice in this repository:
 To practice SQL queries, follow these steps:
 
 1. Clone this repository to your local machine or access it online.
-2. Navigate to the appropriate folder (basic, intermediate, or advanced).
+2. Navigate to the appropriate folder (queries.basic, intermediate, or advanced).
 3. Open the SQL file for the desired question in your preferred SQL editor or tool.
 4. Write your SQL query to solve the problem.
 5. Check the corresponding solution file in the "solutions" folder to compare your solution.
