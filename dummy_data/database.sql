@@ -6,3 +6,13 @@ Email  Varchar(20),
 Phone  int NOT NULL,
 DateJoined int NOT NULL,
 )
+
+CREATE Table Order(
+
+)
+
+CREATE Table OrderItem(
+)
+
+CREATE Table Product(
+)
