@@ -43,6 +43,12 @@ values (1, 'John', 'Doe', 'john@example.com', 123-345-334, 2021-03-14),
         (11, 'Ava', 'Moore', 'ava@example.com', 333-777-2222, '2022-09-10');
         (12, 'William', 'Lee', 'william@example.com', 123-789-4567, '2020-07-29');
         (13, 'Emma', 'Anderson', 'emma@example.com', 888-555-4444, '2017-04-12');
+        (14, 'Mia', 'Thompson', 'mia@example.com', 222-333-4444, '2022-11-03');
+        (15, 'Liam', 'White', 'liam@example.com', 555-777-8888, '2019-10-17');
+         (16, 'Isabella', 'Harris', 'isabella@example.com', 666-444-2222, '2021-06-28');
+         (17, 'Noah', 'Martin', 'noah@example.com', 123-987-6543, '2018-09-14');
+         (18, 'Aiden', 'Taylor', 'aiden@example.com', 777-333-1111, '2020-04-22');
+         (19, 'Chloe', 'Wilson', 'chloe@example.com', 999-111-5555, '2017-12-09');
 
 
 
