@@ -95,4 +95,27 @@ VALUES (1, 101, 201, 3);
        (20, 110, 220, 2);
 
 
+INSERT INTO Product (ProductID, ProductName, Price)
+VALUES (101, 'Widget A', 20),
+       (102, 'Widget B', 25),
+       (103, 'Widget C', 18),
+       (104, 'Gizmo X', 30),
+       (105, 'Gizmo Y', 35),
+       (106, 'Gizmo Z', 40),
+       (107, 'Gadget 1', 50),
+       (108, 'Gadget 2', 55),
+       (109, 'Gadget 3', 60),
+       (110, 'Accessory A', 10),
+       (111, 'Accessory B', 12),
+       (112, 'Accessory C', 15),
+       (113, 'Tool 1', 25),
+       (114, 'Tool 2', 30),
+       (115, 'Tool 3', 35),
+       (116, 'Toy A', 8),
+       (117, 'Toy B', 12),
+       (118, 'Toy C', 15),
+       (119, 'Electronics 1', 100),
+       (120, 'Electronics 2', 120);
+
+
 
