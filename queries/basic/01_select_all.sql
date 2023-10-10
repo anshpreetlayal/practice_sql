@@ -1,12 +1,14 @@
 -- I will be using this website to practice - https://sqliteonline.com/
-SELECT * from demo;
+Select * from demo;
 -- Retries customer id from the customer table
-SELECT CustomerID from Customer;
+Select CustomerID from Customer;
 
 -- Retrieve all customer data from the Customer table.
 Select * from Customer;
 
 -- Get the first and last names of customers who joined on a specific DateJoined.
+  Select FirstName, LastName
+  from Customer;
 -- Fetch the email and phone number of a customer with a specific CustomerID.
 --List all orders from the Order table.
 -- Retrieve the total amount of a specific order using its OrderID.
