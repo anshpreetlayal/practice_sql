@@ -9,8 +9,11 @@ Select * from Customer;
 -- Get the first and last names of customers who joined on a specific DateJoined.
   Select FirstName, LastName
   from Customer
-  WHERE DateJoined = specific_date;
+  WHERE DateJoined = "2020-03-04";
+
 -- Fetch the email and phone number of a customer with a specific CustomerID.
+Select email, phonenumber
+
 --List all orders from the Order table.
 -- Retrieve the total amount of a specific order using its OrderID.
 -- Get the OrderDate of a particular order.
