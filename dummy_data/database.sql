@@ -32,7 +32,7 @@ Insert into Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined)
 values (1, 'John', 'Doe', 'john@example.com', 123-345-334, '2021-03-14'),
        (2, 'Jane', 'Smith', 'jane@example.com', 122-456-754, '2021-04-12'),
        (20, 'Alice', 'Johnson', 'alice@example.com', 456-567-347, '2020-09-19' );
-       (3, 'Katy', 'John', 'katy@example.com', 346-574-357, '2020-03-12' );
+       (3, 'Katy', 'John', 'katy@example.com', 346-574-357, '2020-09-12' );
         (4, 'Michael', 'Smith', 'michael@example.com', 555-123-4567, '2021-05-20');
         (5, 'Emily', 'Johnson', 'emily@example.com', 987-654-3210, '2019-11-08');
         (6, 'David', 'Brown', 'david@example.com', 123-456-7890, '2022-02-15');
@@ -47,7 +47,7 @@ values (1, 'John', 'Doe', 'john@example.com', 123-345-334, '2021-03-14'),
         (15, 'Liam', 'White', 'liam@example.com', 555-777-8888, '2019-10-17');
          (16, 'Isabella', 'Harris', 'isabella@example.com', 666-444-2222, '2021-06-28');
          (17, 'Noah', 'Martin', 'noah@example.com', 123-987-6543, '2018-09-14');
-         (18, 'Aiden', 'Taylor', 'aiden@example.com', 777-333-1111, '2020-04-22');
+         (18, 'Aiden', 'Taylor', 'aiden@example.com', 777-333-1111, '2020-09-19');
          (19, 'Chloe', 'Wilson', 'chloe@example.com', 999-111-5555, '2017-12-09');
 
 Insert into Order (OrderID, CustomerID, OrderDate, TotalAmount)
