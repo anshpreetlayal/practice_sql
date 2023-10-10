@@ -17,6 +17,8 @@ from customer
 where CustomerID = "12";
 
 --List all orders from the Order table.
+select * from Order;
+
 -- Retrieve the total amount of a specific order using its OrderID.
 -- Get the OrderDate of a particular order.
 --  List all order items from the OrderItem table.
