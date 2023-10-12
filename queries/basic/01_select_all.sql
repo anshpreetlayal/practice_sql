@@ -27,6 +27,7 @@ Select order
 --  List all order items from the OrderItem table.
 --  Retrieve the quantity of a specific product in an order item.
 -- List all products from the Product table.
+select * from Products;
 -- Get the name and price of a specific product.
 --Retrieve all customer data from the Customer table.
 --Get the first and last names of customers who joined on a specific DateJoined.
