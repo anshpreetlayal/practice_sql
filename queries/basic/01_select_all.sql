@@ -32,6 +32,9 @@ select * from Products;
 
 --Retrieve all customer data from the Customer table.
 --Get the first and last names of customers who joined on a specific DateJoined.
+Select FirstName, LastName
+from Customers
+
 --Fetch the email and phone number of a customer with a specific CustomerID.
 --  List all orders from the Order table.
  -- Retrieve the total amount of a specific order using its OrderID.
