@@ -29,6 +29,7 @@ Select order
 -- List all products from the Product table.
 select * from Products;
 -- Get the name and price of a specific product.
+
 --Retrieve all customer data from the Customer table.
 --Get the first and last names of customers who joined on a specific DateJoined.
 --Fetch the email and phone number of a customer with a specific CustomerID.
@@ -39,6 +40,9 @@ select * from Products;
 --  Retrieve the quantity of a specific product in an order item.
 --  List all products from the Product table.
 --  Get the name and price of a specific product.
+Select ProductName , Price
+from Product
+where ProductName = "Toy";
 
 
 
