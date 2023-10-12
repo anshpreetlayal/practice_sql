@@ -20,7 +20,7 @@ where CustomerID = "12";
 select * from Order;
 
 -- Retrieve the total amount of a specific order using its OrderID.
-
+Select order
 -- Get the OrderDate of a particular order.
 --  List all order items from the OrderItem table.
 --  Retrieve the quantity of a specific product in an order item.
