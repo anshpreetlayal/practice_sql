@@ -25,6 +25,7 @@ Select order
 
 
 --  List all order items from the OrderItem table.
+
 --  Retrieve the quantity of a specific product in an order item.
 -- List all products from the Product table.
 select * from Products;
@@ -37,6 +38,7 @@ from Customers
 where DateJoined = " 2020-08-12";
 
 --Fetch the email and phone number of a customer with a specific CustomerID.
+
 --  List all orders from the Order table.
  -- Retrieve the total amount of a specific order using its OrderID.
 --  Get the OrderDate of a particular order.
