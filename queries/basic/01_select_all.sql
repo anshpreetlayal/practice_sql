@@ -45,6 +45,7 @@ where DateJoined = " 2020-08-12";
 --  List all order items from the OrderItem table.
 --  Retrieve the quantity of a specific product in an order item.
 --  List all products from the Product table.
+Select * from Product;
 --  Get the name and price of a specific product.
 Select ProductName , Price
 from Product
