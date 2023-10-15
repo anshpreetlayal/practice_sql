@@ -73,10 +73,11 @@ Insert into Order (OrderID, CustomerID, OrderDate, TotalAmount)
         (20,20, '2023-01-29', 400);
 
 INSERT INTO OrderItem (OrderItemID, OrderID, ProductID, Quantity)
-VALUES (1, 1 , 101, 3);
-        (2, 2, 102, 6);
-        (3, 3, 103, 4);
-        ( 4, 4, 104, 3);
+VALUES ( 1, 1 , 101, 3);
+       ( 2, 2, 102, 6);
+       (3, 3, 103, 4);
+       ( 4, 4, 104, 3);
+        
 INSERT INTO Product (ProductID, ProductName, Price)
 VALUES (101, 'Widget A', 20),
        (102, 'Widget B', 25),
