@@ -38,6 +38,9 @@ from Customers
 where DateJoined = " 2020-08-12";
 
 --Fetch the email and phone number of a customer with a specific CustomerID.
+SELECT Email, Phone
+FROM Customer
+WHERE CustomerID = 12;
 
 --  List all orders from the Order table.
  -- Retrieve the total amount of a specific order using its OrderID.
