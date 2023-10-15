@@ -61,6 +61,11 @@ SELECT *
 FROM OrderItem;
 
 --  Retrieve the quantity of a specific product in an order item.
+SELECT Quantity
+FROM OrderItem
+WHERE OrderID = 12
+AND ProductID = 104;
+
 --  List all products from the Product table.
 Select * from Product;
 --  Get the name and price of a specific product.

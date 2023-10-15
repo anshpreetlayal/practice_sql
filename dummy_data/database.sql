@@ -73,28 +73,8 @@ Insert into Order (OrderID, CustomerID, OrderDate, TotalAmount)
         (20,20, '2023-01-29', 400);
 
 INSERT INTO OrderItem (OrderItemID, OrderID, ProductID, Quantity)
-VALUES (1, 101, 201, 3);
-       (2, 101, 202, 2);
-       (3, 102, 203, 5);
-       (4, 102, 204, 1);
-       (5, 103, 205, 4);
-       (6, 103, 206, 2);
-       (7, 104, 207, 3);
-       (8, 104, 208, 2);
-       (9, 105, 209, 6);
-       (10, 105, 210, 1);
-       (11, 106, 211, 2);
-       (12, 106, 212, 4);
-       (13, 107, 213, 3);
-       (14, 107, 214, 2);
-       (15, 108, 215, 5);
-       (16, 108, 216, 1);
-       (17, 109, 217, 4);
-       (18, 109, 218, 2);
-       (19, 110, 219, 3);
-       (20, 110, 220, 2);
-
-
+VALUES (1, 1 , 101, 3);
+        (2, 2, 102, 6);
 INSERT INTO Product (ProductID, ProductName, Price)
 VALUES (101, 'Widget A', 20),
        (102, 'Widget B', 25),
