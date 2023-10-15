@@ -49,10 +49,17 @@ FROM Order;
  -- Retrieve the total amount of a specific order using its OrderID.
  SELECT TotalAmount
  FROM Order
- WHERE OrderID = specific_order_id;
+ WHERE OrderID = 19;
 
 --  Get the OrderDate of a particular order.
+SELECT OrderDate
+FROM Order
+WHERE OrderID = 16;
+
 --  List all order items from the OrderItem table.
+SELECT *
+FROM OrderItem;
+
 --  Retrieve the quantity of a specific product in an order item.
 --  List all products from the Product table.
 Select * from Product;
