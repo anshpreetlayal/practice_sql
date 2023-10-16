@@ -76,8 +76,9 @@ INSERT INTO OrderItem (OrderItemID, OrderID, ProductID, Quantity)
 VALUES ( 1, 1 , 101, 3);
        ( 2, 2, 102, 6);
        (3, 3, 103, 4);
-       ( 4, 4, 104, 3);
-       ( 5, 5, 104, 3);
+       ( 4, 4, 104, 6);
+       ( 5, 5, 105, 10);
+       ( 6, 6, 106, 13);
 
         
 INSERT INTO Product (ProductID, ProductName, Price)
