@@ -83,6 +83,7 @@ VALUES ( 1, 1 , 101, 3);
       ( 8, 8, 108, 9);
        ( 9, 9, 109, 3);
         ( 10, 10, 110, 9);
+        ( 11, 11, 111, 6);
 
         
 INSERT INTO Product (ProductID, ProductName, Price)
