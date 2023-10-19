@@ -30,6 +30,9 @@ Select order
 -- List all products from the Product table.
 select * from Products;
 -- Get the name and price of a specific product.
+SELECT ProductName, Price
+FROM Product
+WHERE ProductID = 104;
 
 --Retrieve all customer data from the Customer table.
 --Get the first and last names of customers who joined on a specific DateJoined.
