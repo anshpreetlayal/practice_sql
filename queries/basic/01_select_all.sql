@@ -35,6 +35,9 @@ FROM Product
 WHERE ProductID = 104;
 
 --Retrieve all customer data from the Customer table.
+SELECT *
+FROM Customer;
+
 --Get the first and last names of customers who joined on a specific DateJoined.
 Select FirstName, LastName
 from Customers
