@@ -34,7 +34,7 @@ FROM OrderItem;
 --  Retrieve the quantity of a specific product in an order item.
 
 -- List all products from the Product table.
-select * from Products;
+select * from Product;
 -- Get the name and price of a specific product.
 SELECT ProductName, Price
 FROM Product
