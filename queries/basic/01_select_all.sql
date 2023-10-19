@@ -27,8 +27,9 @@ SELECT OrderDate
 FROM Order
 WHERE OrderID = 12;
 
-
 --  List all order items from the OrderItem table.
+SELECT *
+FROM OrderItem;
 
 --  Retrieve the quantity of a specific product in an order item.
 
