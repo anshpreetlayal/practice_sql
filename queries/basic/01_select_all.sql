@@ -40,7 +40,7 @@ FROM Customer;
 
 --Get the first and last names of customers who joined on a specific DateJoined.
 Select FirstName, LastName
-from Customers
+from Customer
 where DateJoined = " 2020-08-12";
 
 --Fetch the email and phone number of a customer with a specific CustomerID.
