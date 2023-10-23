@@ -23,7 +23,9 @@ select * from Order;
 Select order
 
 -- Get the OrderDate of a particular order.
-
+SELECT OrderDate
+FROM Order
+WHERE OrderID = 12;
 
 --  List all order items from the OrderItem table.
 SELECT *
