@@ -12,9 +12,7 @@ Select * from Customer;
   WHERE DateJoined = "2020-09-19";
 
 -- Fetch the email and phone number of a customer with a specific CustomerID.
-Select email, phone
-from customer
-where CustomerID = "12";
+
 
 --List all orders from the Order table.
 select * from Order;
