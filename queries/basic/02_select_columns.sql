@@ -40,3 +40,9 @@
 
 
 --Select the first names of customers who joined in 2022.
+
+
+--Select the product names and quantities from the "Product" and "OrderItem" tables.
+
+
+
