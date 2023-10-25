@@ -19,3 +19,6 @@
 
 
 --Select the first name and phone number of customers.
+
+
+--Select the total order amounts for orders with an amount greater than 700.
