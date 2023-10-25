@@ -37,3 +37,6 @@
 
 
 --Select the product IDs from the "OrderItem" table.
+
+
+--Select the first names of customers who joined in 2022.
