@@ -7,3 +7,6 @@
 
 
 --Select the product names from the "Product" table.
+
+
+--Select the email addresses of customers who joined in 2021.
