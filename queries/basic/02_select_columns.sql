@@ -32,4 +32,8 @@
 
 --Select the order IDs and customer IDs from the "Order" table.
 
+
 --Select the order dates and total order amounts from the "Order" table.
+
+
+--Select the product IDs from the "OrderItem" table.
