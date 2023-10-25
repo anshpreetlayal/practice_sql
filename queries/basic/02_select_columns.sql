@@ -22,3 +22,6 @@
 
 
 --Select the total order amounts for orders with an amount greater than 700.
+
+
+Select the product names and prices from the "Product" table.
