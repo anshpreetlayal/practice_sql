@@ -12,4 +12,4 @@
 --Select the email addresses of customers who joined in 2021.
 
 
-Select the total order amounts from the "Order" table.
+--Select the total order amounts from the "Order" table.
