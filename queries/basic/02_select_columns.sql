@@ -13,3 +13,6 @@
 
 
 --Select the total order amounts from the "Order" table.
+
+
+--Select the quantity of products in the "OrderItem" table.
