@@ -31,6 +31,8 @@ FROM OrderItem;
 
 
 --Select the first name and phone number of customers.
+SELECT FirstName, Phone
+FROM Customer;
 
 
 --Select the total order amounts for orders with an amount greater than 700.
