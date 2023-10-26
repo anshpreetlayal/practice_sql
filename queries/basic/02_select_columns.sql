@@ -36,6 +36,9 @@ FROM Customer;
 
 
 --Select the total order amounts for orders with an amount greater than 700.
+SELECT TotalAmount
+FROM Order
+WHERE TotalAmount > 700;
 
 
 --Select the product names and prices from the "Product" table.
