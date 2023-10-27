@@ -60,6 +60,9 @@ WHERE TotalAmount > 700;
 
 
 --Select the product names and quantities from the "Product" and "OrderItem" tables.
+SELECT p.ProductName, oi.Quantity
+FROM Product p
+JOIN OrderItem oi ON p.ProductID = oi.ProductID;
 
 
 
