@@ -10,8 +10,7 @@ FROM Order;
 
 
 --Select the product names from the "Product" table.
-SELECT ProductName
-FROM Product;
+
 
 
 --Select the email addresses of customers who joined in 2021.
