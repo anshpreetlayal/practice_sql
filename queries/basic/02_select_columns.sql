@@ -21,8 +21,7 @@ WHERE DateJoined LIKE '2021';
 
 
 --Select the total order amounts from the "Order" table.
-SELECT TotalAmount
-FROM Order;
+
 
 
 --Select the quantity of products in the "OrderItem" table.
