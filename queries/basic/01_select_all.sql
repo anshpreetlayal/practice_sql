@@ -36,6 +36,7 @@ FROM OrderItem;
 
 
 -- List all products from the Product table.
+select * from Product;
 
 -- Get the name and price of a specific product.
 SELECT ProductName, Price
