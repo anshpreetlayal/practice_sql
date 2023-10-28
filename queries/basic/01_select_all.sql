@@ -31,7 +31,9 @@ WHERE OrderID = 12;
 SELECT *
 FROM OrderItem;
 
+
 --  Retrieve the quantity of a specific product in an order item.
+
 
 -- List all products from the Product table.
 select * from Product;

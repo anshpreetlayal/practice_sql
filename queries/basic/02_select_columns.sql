@@ -1,7 +1,8 @@
 --Practice questions
 
 --Select the first and last names of all customers.
-
+SELECT FirstName, LastName
+FROM Customer;
 
 --Select the order dates from the "Order" table.
 SELECT OrderDate
