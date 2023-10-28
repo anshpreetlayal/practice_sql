@@ -25,7 +25,7 @@ SELECT TotalAmount
 FROM Order;
 
 
---Select te quantity of products in the "OrderItem" table.
+--Select the quantity of products in the "OrderItem" table.
 SELECT Quantity
 FROM OrderItem;
 
