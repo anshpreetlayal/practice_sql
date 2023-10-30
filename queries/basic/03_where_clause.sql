@@ -16,4 +16,8 @@
 
 --What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
 
---
+--List the order IDs and customer IDs for orders with a total amount between $400 and $500.
+
+
+
+
