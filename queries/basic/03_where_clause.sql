@@ -14,4 +14,5 @@
 
 --Retrieve the order date and total amount for orders placed by customers who joined in 2021.
 
---
+--What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
+
