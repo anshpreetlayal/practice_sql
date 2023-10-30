@@ -12,4 +12,5 @@
 
 --Which customers placed orders in January 2023?
 
---
+--Retrieve the order date and total amount for orders placed by customers who joined in 2021.
+
