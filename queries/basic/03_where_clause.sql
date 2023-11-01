@@ -18,6 +18,9 @@ JOIN Customer c ON o.CustomerID = c.CustomerID
 WHERE c.FirstName = 'Sophia' AND c.LastName = 'Williams';
 
 --Retrieve all orders with a total amount greater than $600.
+SELECT *
+FROM "Order"
+WHERE TotalAmount > 600;
 
 --List the products with a price lower than $25.
 
@@ -26,7 +29,7 @@ WHERE c.FirstName = 'Sophia' AND c.LastName = 'Williams';
 --Which customers placed orders in January 2023?
 
 --Retrieve the order date and total amount for orders placed by customers who joined in 2021.
-Se
+
 --What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
 
 --List the order IDs and customer IDs for orders with a total amount between $400 and $500.
