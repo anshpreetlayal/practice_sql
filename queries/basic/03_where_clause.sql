@@ -28,6 +28,10 @@ FROM Product
 WHERE Price < 25;
 
 --Find the email address of the customer who made the order with the highest total amount.
+SELECT c.Email
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE o.TotalAmount = (SELECT MAX(TotalAmount) FROM "Order");
 
 --Which customers placed orders in January 2023?
 
