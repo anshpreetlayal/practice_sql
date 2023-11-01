@@ -10,6 +10,12 @@ FROM Customer
 WHERE DateJoined < '2020-09-01';
 
 --What products were ordered by customer Sophia Williams?
+SELECT p.ProductName
+FROM Product p
+JOIN OrderItem oi ON p.ProductID = oi.ProductID
+JOIN "Order" o ON oi.OrderID = o.OrderID
+JOIN Customer c ON o.CustomerID = c.CustomerID
+WHERE c.FirstName = 'Sophia' AND c.LastName = 'Williams';
 
 --Retrieve all orders with a total amount greater than $600.
 
