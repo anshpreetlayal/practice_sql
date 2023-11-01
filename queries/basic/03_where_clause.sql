@@ -23,6 +23,7 @@ FROM "Order"
 WHERE TotalAmount > 600;
 
 --List the products with a price lower than $25.
+Select *
 
 --Find the email address of the customer who made the order with the highest total amount.
 
