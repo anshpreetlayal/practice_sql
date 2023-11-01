@@ -34,6 +34,7 @@ JOIN "Order" o ON c.CustomerID = o.CustomerID
 WHERE o.TotalAmount = (SELECT MAX(TotalAmount) FROM "Order");
 
 --Which customers placed orders in January 2023?
+SELECT DISTINCT c.FirstName, c.LastName
 
 --Retrieve the order date and total amount for orders placed by customers who joined in 2021.
 
