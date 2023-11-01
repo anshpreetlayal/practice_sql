@@ -21,6 +21,9 @@ WHERE c.FirstName = 'John' AND c.LastName = 'Doe';
 --What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
 
 --List the order IDs and customer IDs for orders with a total amount between $400 and $500.
+SELECT OrderID, CustomerID
+FROM "Order"
+WHERE TotalAmount BETWEEN 400 AND 500;
 
 
 
