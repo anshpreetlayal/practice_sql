@@ -37,6 +37,7 @@ WHERE o.TotalAmount = (SELECT MAX(TotalAmount) FROM "Order");
 SELECT DISTINCT c.FirstName, c.LastName
 FROM Customer c
 JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE o.OrderDate BETWEEN '2023-01-01' AND '2023-01-31';
 
 --Retrieve the order date and total amount for orders placed by customers who joined in 2021.
 
