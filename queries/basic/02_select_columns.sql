@@ -11,9 +11,7 @@
 
 
 --Select the email addresses of customers who joined in 2021.
-SELECT Email
-FROM Customer
-WHERE DateJoined LIKE '2021';
+
 
 
 --Select the total order amounts from the "Order" table.
