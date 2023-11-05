@@ -1,8 +1,5 @@
 --Find the total amount of orders placed by customer John Doe.
-SELECT SUM(o.TotalAmount)
-FROM Order o
-JOIN Customer c ON o.CustomerID = c.CustomerID
-WHERE c.FirstName = 'John' AND c.LastName = 'Doe';
+
 
 --Which customers joined before September 2020?
 SELECT FirstName, LastName
