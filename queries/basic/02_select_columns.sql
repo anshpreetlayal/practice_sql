@@ -19,8 +19,7 @@
 
 
 --Select the quantity of products in the "OrderItem" table.
-SELECT Quantity
-FROM OrderItem;
+
 
 
 --Select the first name and phone number of customers.
