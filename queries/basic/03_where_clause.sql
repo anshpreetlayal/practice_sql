@@ -6,9 +6,7 @@
 --What products were ordered by customer Sophia Williams?
 
 --Retrieve all orders with a total amount greater than $600.
-SELECT *
-FROM "Order"
-WHERE TotalAmount > 600;
+
 
 --List the products with a price lower than $25.
 SELECT ProductName
