@@ -9,9 +9,6 @@
 
 
 --List the products with a price lower than $25.
-SELECT ProductName
-FROM Product
-WHERE Price < 25;
 
 --Find the email address of the customer who made the order with the highest total amount.
 SELECT c.Email
