@@ -1,61 +1,45 @@
 
--- Retries customer id from the customer table
+-- 1. Retries customer id from the customer table
 
--- Retrieve all customer data from the Customer table.
+-- 2. Retrieve all customer data from the Customer table.
 
--- Get the first and last names of customers who joined on a specific DateJoined.
+-- 3. Get the first and last names of customers who joined on a specific DateJoined.
 
+-- 4. Fetch the email and phone number of a customer with a specific CustomerID.
 
--- Fetch the email and phone number of a customer with a specific CustomerID.
+-- 5. List all orders from the Order table.
 
+-- 6. Retrieve the total amount of a specific order using its OrderID.
 
---List all orders from the Order table.
+-- 7. Get the OrderDate of a particular order.
 
+-- 8. List all order items from the OrderItem table.
 
--- Retrieve the total amount of a specific order using its OrderID.
+-- 9. Retrieve the quantity of a specific product in an order item.
 
+--  10. List all products from the Product table.
 
--- Get the OrderDate of a particular order.
+--  11. Get the name and price of a specific product.
 
+-- 12. Retrieve all customer data from the Customer table.
 
---  List all order items from the OrderItem table.
+-- 13. Get the first and last names of customers who joined on a specific DateJoined.
 
+-- 14. Fetch the email and phone number of a customer with a specific CustomerID.
 
+--  15. List all orders from the Order table.
 
---  Retrieve the quantity of a specific product in an order item.
+-- 16. Retrieve the total amount of a specific order using its OrderID.
 
+-- 17. Get the OrderDate of a particular order.
 
--- List all products from the Product table.
-s
+-- 18. List all order items from the OrderItem table.
 
--- Get the name and price of a specific product.
+--  19. Retrieve the quantity of a specific product in an order item.
 
-
---Retrieve all customer data from the Customer table.
-
-
---Get the first and last names of customers who joined on a specific DateJoined.
-
---Fetch the email and phone number of a customer with a specific CustomerID.
-
-
---  List all orders from the Order table.
+-- 20.  List all products from the Product table.
 
 
- -- Retrieve the total amount of a specific order using its OrderID.
-
---  Get the OrderDate of a particular order.
-
-
---  List all order items from the OrderItem table.
-
-
---  Retrieve the quantity of a specific product in an order item.
-
-
---  List all products from the Product table.
-
---  Get the name and price of a specific product.
 
 
 
