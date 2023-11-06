@@ -2,15 +2,25 @@
 -- 1. Select all first names from the Customer table.
 
 
--- 2. Retrieve all customer data from the Customer table.
+-- 2. Select all last names from the Customer table.
 
--- 3. Get the first and last names of customers who joined on a specific DateJoined.
 
--- 4. Fetch the email and phone number of a customer with a specific CustomerID.
 
--- 5. List all orders from the Order table.
+-- 3. Select all order dates from the "Order" table.
 
--- 6. Retrieve the total amount of a specific order using its OrderID.
+
+
+-- 4. Select all product names from the "Product" table.
+
+
+
+-- 5. Select all email addresses of customers who joined in 2021.
+
+
+
+-- 6.Select all total order amounts from the "Order" table.
+
+
 
 -- 7. Get the OrderDate of a particular order.
 
