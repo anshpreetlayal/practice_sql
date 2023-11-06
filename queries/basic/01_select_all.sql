@@ -1,10 +1,7 @@
 
 -- 1. Select all first names from the Customer table.
 
-
 -- 2. Select all last names from the Customer table.
-
-
 
 -- 3. Select all order dates from the "Order" table.
 
@@ -34,27 +31,48 @@
 
 
 
---  10. List all products from the Product table.
+--  10. Select all product names and prices from the "Product" table.
 
---  11. Get the name and price of a specific product.
 
--- 12. Retrieve all customer data from the Customer table.
+--  11. Select all last names of customers who joined before 2020.
 
--- 13. Get the first and last names of customers who joined on a specific DateJoined.
 
--- 14. Fetch the email and phone number of a customer with a specific CustomerID.
 
---  15. List all orders from the Order table.
+-- 12. Select all order IDs and customer IDs from the "Order" table.
 
--- 16. Retrieve the total amount of a specific order using its OrderID.
 
--- 17. Get the OrderDate of a particular order.
 
--- 18. List all order items from the OrderItem table.
+-- 13.Select all order dates and total order amounts from the "Order" table.
 
---  19. Retrieve the quantity of a specific product in an order item.
 
--- 20.  List all products from the Product table.
+
+-- 14. Select all product IDs from the "OrderItem" table.
+
+
+
+--  15. Select all first names of customers who joined in 2022.
+
+
+
+-- 16. Select all product names and quantities from the "Product" and "OrderItem" tables.
+
+
+
+-- 17. Select all email addresses and phone numbers of customers.
+
+
+
+-- 18. Select all order IDs and total order amounts for orders placed in January 2023.
+
+
+
+--  19. Select all product names and their prices from the "Product" table.
+
+
+
+-- 20.  Select all first names and last names of customers who joined before September 2020.
+
+
 
 
 
