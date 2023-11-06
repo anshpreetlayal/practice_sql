@@ -11,6 +11,8 @@ SELECT OrderDate
 FROM "Order";
 
 -- 4. Select all product names from the "Product" table.
+SELECT ProductName
+FROM Product;
 
 -- 5. Select all email addresses of customers who joined in 2021.
 
