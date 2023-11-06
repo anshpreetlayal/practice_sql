@@ -7,6 +7,8 @@ SELECT LastName
 FROM Customer;
 
 -- 3. Select all order dates from the "Order" table.
+SELECT OrderDate
+FROM "Order";
 
 -- 4. Select all product names from the "Product" table.
 
