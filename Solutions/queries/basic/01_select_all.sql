@@ -1,79 +1,49 @@
---1. Fetch the email and phone number of a customer with a specific CustomerID.
-Select email, phone
-from customer
-where CustomerID = "12";
-
---2. List all orders from the Order table.
-select * from Order;
-
---3. Retrieve the total amount of a specific order using its OrderID.
-Select order
-
---4.  Get the OrderDate of a particular order.
-SELECT OrderDate
-FROM Order
-WHERE OrderID = 12;
-
---5.  List all order items from the OrderItem table.
-SELECT *
-FROM OrderItem;
-
---6. Retrieve the quantity of a specific product in an order item.
-
-
---7. List all products from the Product table.
-select * from Product;
-
--- 8. Get the name and price of a specific product.
-SELECT ProductName, Price
-FROM Product
-WHERE ProductID = 104;
-
---9. Retrieve all customer data from the Customer table.
-SELECT *
+-- 1. Select all first names from the Customer table.
+SELECT FirstName
 FROM Customer;
 
---10. Get the first and last names of customers who joined on a specific DateJoined.
-Select FirstName, LastName
-from Customer
-where DateJoined = " 2020-08-12";
+-- 2. Select all last names from the Customer table.
 
---11. Fetch the email and phone number of a customer with a specific CustomerID.
-SELECT Email, Phone
-FROM Customer
-WHERE CustomerID = 12;
+-- 3. Select all order dates from the "Order" table.
 
---12. List all orders from the Order table.
-SELECT *
-FROM Order;
+-- 4. Select all product names from the "Product" table.
 
---13. Retrieve the total amount of a specific order using its OrderID.
- SELECT TotalAmount
- FROM Order
- WHERE OrderID = 19;
+-- 5. Select all email addresses of customers who joined in 2021.
 
---14.  Get the OrderDate of a particular order.
-SELECT OrderDate
-FROM Order
-WHERE OrderID = 16;
+-- 6.Select all total order amounts from the "Order" table.
 
---15. List all order items from the OrderItem table.
-SELECT *
-FROM OrderItem;
+-- 7.Select all quantities of products in the "OrderItem" table.
 
---16.  Retrieve the quantity of a specific product in an order item.
-SELECT Quantity
-FROM OrderItem
-WHERE OrderID = 12
-AND ProductID = 104;
+-- 8. Select all first names and phone numbers of customers.
 
---17. List all products from the Product table.
-Select * from Product;
+-- 9.Select all total order amounts for orders with an amount greater than 700.
 
---18.  Get the name and price of a specific product.
-Select ProductName , Price
-from Product
-where ProductName = "Toy";
+--  10. Select all product names and prices from the "Product" table.
+
+--  11. Select all last names of customers who joined before 2020.
+
+-- 12. Select all order IDs and customer IDs from the "Order" table.
+
+-- 13.Select all order dates and total order amounts from the "Order" table.
+
+-- 14. Select all product IDs from the "OrderItem" table.
+
+--  15. Select all first names of customers who joined in 2022.
+
+-- 16. Select all product names and quantities from the "Product" and "OrderItem" tables.
+
+-- 17. Select all email addresses and phone numbers of customers.
+
+-- 18. Select all order IDs and total order amounts for orders placed in January 2023.
+
+--  19. Select all product names and their prices from the "Product" table.
+
+-- 20.  Select all first names and last names of customers who joined before September 2020.
+
+
+
+
+
 
 
 
