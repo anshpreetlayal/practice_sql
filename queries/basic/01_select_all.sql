@@ -26,9 +26,13 @@
 
 
 
--- 8. List all order items from the OrderItem table.
+-- 8. Select all first names and phone numbers of customers.
 
--- 9. Retrieve the quantity of a specific product in an order item.
+
+
+-- 9.Select all total order amounts for orders with an amount greater than 700.
+
+
 
 --  10. List all products from the Product table.
 
