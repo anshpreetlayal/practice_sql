@@ -22,7 +22,9 @@
 
 
 
--- 7. Get the OrderDate of a particular order.
+-- 7.Select all quantities of products in the "OrderItem" table.
+
+
 
 -- 8. List all order items from the OrderItem table.
 
