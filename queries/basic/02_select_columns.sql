@@ -28,5 +28,14 @@
 
 --15. Select the product names and quantities from the "Product" and "OrderItem" tables.
 
+-- 16. Select the email addresses of customers who joined in 2020.
+
+--17. Select the last names of customers who placed orders with a total amount less than $400.
+
+--18. Select the product names from the "Product" table that have a price higher than $50.
+
+--19. Select the total order amounts for orders placed by customers with a first name starting with 'A'.
+
+--20. Select the order dates and total order amounts from the "Order" table for orders placed in January 2023.
 
 
