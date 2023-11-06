@@ -1,5 +1,6 @@
 
--- 1. Retries customer id from the customer table
+-- 1. Select all first names from the Customer table.
+
 
 -- 2. Retrieve all customer data from the Customer table.
 
