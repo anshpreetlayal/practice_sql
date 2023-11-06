@@ -3,6 +3,8 @@ SELECT FirstName
 FROM Customer;
 
 -- 2. Select all last names from the Customer table.
+SELECT LastName
+FROM Customer;
 
 -- 3. Select all order dates from the "Order" table.
 
