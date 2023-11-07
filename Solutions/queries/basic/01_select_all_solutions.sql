@@ -23,7 +23,7 @@ Where DateJoined => '2021-01-01' AND  <= '2021-12-31';
 SELECT TotalAmount
 FROM Order;
 -- 7.Select all quantities of products in the "OrderItem" table.
-
+SELECT
 -- 8. Select all first names and phone numbers of customers.
 
 -- 9.Select all total order amounts for orders with an amount greater than 700.
