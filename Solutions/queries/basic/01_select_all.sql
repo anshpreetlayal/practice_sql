@@ -15,7 +15,8 @@ SELECT ProductName
 FROM Product;
 
 -- 5. Select all email addresses of customers who joined in 2021.
-SELECT
+SELECT Email
+FROM
 -- 6.Select all total order amounts from the "Order" table.
 
 -- 7.Select all quantities of products in the "OrderItem" table.
