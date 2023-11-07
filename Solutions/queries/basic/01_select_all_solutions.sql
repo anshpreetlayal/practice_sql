@@ -20,7 +20,8 @@ FROM Customers
 Where DateJoined => '2021-01-01' AND  <= '2021-12-31';
 
 -- 6.Select all total order amounts from the "Order" table.
-SELECT
+SELECT TotalAmount
+FROM Order;
 -- 7.Select all quantities of products in the "OrderItem" table.
 
 -- 8. Select all first names and phone numbers of customers.
