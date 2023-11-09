@@ -43,6 +43,8 @@ SELECT ProductID
 FROM OrderItem;
 
 --  15. Select all first names of customers who joined in 2022.
+SELECT FirstName
+
 
 -- 16. Select all product names and quantities from the "Product" and "OrderItem" tables.
 SELECT p.ProductName, oi.Quantity
