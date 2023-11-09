@@ -39,7 +39,8 @@ FROM Customer;
 -- 13.Select all order dates and total order amounts from the "Order" table.
 
 -- 14. Select all product IDs from the "OrderItem" table.
-
+SELECT ProductID
+FROM OrderItem;
 --  15. Select all first names of customers who joined in 2022.
 
 -- 16. Select all product names and quantities from the "Product" and "OrderItem" tables.
