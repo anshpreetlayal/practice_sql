@@ -28,6 +28,7 @@ FROM
 -- 8. Select all first names and phone numbers of customers.
 SELECT Firstname AND Phone
 FROM Customer;
+
 -- 9.Select all total order amounts for orders with an amount greater than 700.
 
 --  10. Select all product names and prices from the "Product" table.
