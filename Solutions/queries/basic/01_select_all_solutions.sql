@@ -31,7 +31,8 @@ FROM Customer;
 -- 9.Select all total order amounts for orders with an amount greater than 700.
 
 --  10. Select all product names and prices from the "Product" table.
-
+SELECT ProductName, Prices
+FROM Product;
 --  11. Select all last names of customers who joined before 2020.
 
 -- 12. Select all order IDs and customer IDs from the "Order" table.
