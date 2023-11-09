@@ -48,7 +48,6 @@ FROM Customer;
 
 -- 18. Select all order IDs and total order amounts for orders placed in January 2023.
 SELECT OrderID, TotalAmount
-SELECT OrderID, TotalAmount
 FROM "Order"
 WHERE OrderDate >= '2023-01-01' AND OrderDate <= '2023-01-31';
 
