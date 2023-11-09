@@ -49,7 +49,7 @@ FROM Customer;
 -- 18. Select all order IDs and total order amounts for orders placed in January 2023.
 SELECT OrderID, TotalAmount
 FROM Order
-WHERE
+WHERE OrderDate = '2023-01';
 --  19. Select all product names and their prices from the "Product" table.
 SELECT ProductName , Price
 FROM Product;
