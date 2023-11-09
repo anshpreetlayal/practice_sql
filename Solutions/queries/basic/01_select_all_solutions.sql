@@ -43,6 +43,8 @@ FROM Customer;
 --  15. Select all first names of customers who joined in 2022.
 
 -- 16. Select all product names and quantities from the "Product" and "OrderItem" tables.
+SELECT p.ProductName, oi.Quantity
+
 
 -- 17. Select all email addresses and phone numbers of customers.
 SELECT Email, Phone
