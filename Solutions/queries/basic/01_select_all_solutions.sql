@@ -47,7 +47,9 @@ FROM Customer;
 -- 17. Select all email addresses and phone numbers of customers.
 
 -- 18. Select all order IDs and total order amounts for orders placed in January 2023.
-
+SELECT OrderID, TotalAmount
+FROM Order
+WHERE
 --  19. Select all product names and their prices from the "Product" table.
 SELECT ProductName , Price
 FROM Product;
