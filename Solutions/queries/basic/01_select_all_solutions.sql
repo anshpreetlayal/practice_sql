@@ -44,6 +44,8 @@ FROM OrderItem;
 
 --  15. Select all first names of customers who joined in 2022.
 SELECT FirstName
+FROM Customer
+WHERE DateJoined >= '2022-01-01' AND DateJoined <= '2022-12-31';
 
 
 -- 16. Select all product names and quantities from the "Product" and "OrderItem" tables.
