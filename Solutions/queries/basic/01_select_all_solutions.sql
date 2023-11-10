@@ -42,6 +42,7 @@ FROM Product;
 SELECT  LastName
 FROM Customer
 WHERE DateJoined >= '2020-12-31';
+
 -- 12. Select all order IDs and customer IDs from the "Order" table.
 
 -- 13.Select all order dates and total order amounts from the "Order" table.
