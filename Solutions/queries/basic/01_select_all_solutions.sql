@@ -48,7 +48,8 @@ SELECT OrderID , CustomerID
 FROM Order;
 
 -- 13.Select all order dates and total order amounts from the "Order" table.
-
+SELECT OrderDate, TotalAmount
+FROM Order;
 
 -- 14. Select all product IDs from the "OrderItem" table.
 SELECT ProductID
