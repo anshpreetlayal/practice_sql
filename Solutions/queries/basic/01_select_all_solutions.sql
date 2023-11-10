@@ -49,6 +49,7 @@ FROM Order;
 
 -- 13.Select all order dates and total order amounts from the "Order" table.
 
+
 -- 14. Select all product IDs from the "OrderItem" table.
 SELECT ProductID
 FROM OrderItem;
