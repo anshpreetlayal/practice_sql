@@ -78,6 +78,7 @@ WHERE OrderDate >= '2023-01-01' AND OrderDate <= '2023-01-31';
 --  19. Select all product names and their prices from the "Product" table.
 SELECT ProductName , Price
 FROM Product;
+
 -- 20.  Select all first names and last names of customers who joined before September 2020.
 SELECT FirstName, LastName
 FROM Customer
