@@ -34,8 +34,9 @@ FROM Customer;
 --  10. Select all product names and prices from the "Product" table.
 SELECT ProductName, Prices
 FROM Product;
---  11. Select all last names of customers who joined before 2020.
 
+--  11. Select all last names of customers who joined before 2020.
+SELECT
 -- 12. Select all order IDs and customer IDs from the "Order" table.
 
 -- 13.Select all order dates and total order amounts from the "Order" table.
