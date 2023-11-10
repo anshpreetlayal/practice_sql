@@ -22,9 +22,11 @@ Where DateJoined => '2021-01-01' AND  <= '2021-12-31';
 -- 6.Select all total order amounts from the "Order" table.
 SELECT TotalAmount
 FROM Order;
+
 -- 7.Select all quantities of products in the "OrderItem" table.
 SELECT Products
 FROM
+
 -- 8. Select all first names and phone numbers of customers.
 SELECT Firstname AND Phone
 FROM Customer;
