@@ -24,8 +24,9 @@ SELECT TotalAmount
 FROM Order;
 
 -- 7.Select all quantities of products in the "OrderItem" table.
-SELECT Products
-FROM
+SELECT Quantity
+FROM OrderItem;
+
 
 -- 8. Select all first names and phone numbers of customers.
 SELECT Firstname AND Phone
