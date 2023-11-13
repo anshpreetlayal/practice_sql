@@ -19,6 +19,8 @@ SELECT ProductName
 FROM Product;
 
 ---6. SELECT TotalAmount FROM "Order";
+SELECT TotalAmount
+FROM Order;
 
 ---7. SELECT FirstName FROM Customer;
 
