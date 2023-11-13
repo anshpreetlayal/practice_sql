@@ -1,69 +1,39 @@
---Select the last names of customers who joined before 2020.
-SELECT LastName
-FROM Customer
-WHERE DateJoined < '2020-01-01';
+---1. SELECT CustomerID FROM Customer;
 
---Select the order IDs and customer IDs from the "Order" table.
-SELECT OrderID, CustomerID
-FROM "Order";
---Select the order dates and total order amounts from the "Order" table.
-SELECT OrderDate, TotalAmount
-FROM "Order";
+---2. SELECT OrderID, OrderDate FROM "Order";
 
---Select the product IDs from the "OrderItem" table.
-SELECT ProductID
-FROM OrderItem;
+---3. SELECT ProductID FROM OrderItem;
 
---Select the first names of customers who joined in 2022.
+---4. SELECT Email FROM Customer;
 
+---5. SELECT ProductName FROM Product;
 
---Select the product names and quantities from the "Product" and "OrderItem" tables.
+---6. SELECT TotalAmount FROM "Order";
 
+---7. SELECT FirstName FROM Customer;
 
+---8. SELECT OrderItemID FROM OrderItem;
 
---Select the email addresses of customers who joined in 2020.
+---9. SELECT Phone FROM Customer;
 
+---10. SELECT Price FROM Product;
 
+---11. SELECT LastName FROM Customer;
 
---Select the last names of customers who placed orders with a total amount less than $400.
+---12. SELECT OrderDate FROM "Order";
 
+---13. SELECT Quantity FROM OrderItem;
 
+---14. SELECT DateJoined FROM Customer;
 
---Select the product names and prices from the "Product" table.
-SELECT ProductName, Price
-FROM Product;
+---15. SELECT ProductID FROM Product;
 
---Select the last names of customers who joined before 2020.
+---16. SELECT CustomerID FROM "Order";
 
+---17. SELECT OrderItemID FROM OrderItem;
 
---Select the order IDs and customer IDs from the "Order" table.
+---18. SELECT CustomerID FROM OrderItem;
 
+---19. SELECT OrderID FROM OrderItem;
 
---Select the order dates and total order amounts from the "Order" table.
-
-
---Select the product IDs from the "OrderItem" table.
-
-
---Select the first names of customers who joined in 2022.
-
-
---Select the product names and quantities from the "Product" and "OrderItem" tables.
-SELECT p.ProductName, oi.Quantity
-FROM Product p
-JOIN OrderItem oi ON p.ProductID = oi.ProductID;
-
-
--- 16. Select the email addresses of customers who joined in 2020.
-
---17. Select the last names of customers who placed orders with a total amount less than $400.
-
---18. Select the product names from the "Product" table that have a price higher than $50.
-
---19. Select the total order amounts for orders placed by customers with a first name starting with 'A'.
-
---20. Select the order dates and total order amounts from the "Order" table for orders placed in January 2023.
-
-
-
-
+---20. SELECT DateJoined, Email FROM Customer;
