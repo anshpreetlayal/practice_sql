@@ -7,6 +7,8 @@ SELECT OrderID , OrderDate
 FROM Order;
 
 ---3. SELECT ProductID FROM OrderItem;
+SELECT ProductID
+FROM OrderItem;
 
 ---4. SELECT Email FROM Customer;
 
