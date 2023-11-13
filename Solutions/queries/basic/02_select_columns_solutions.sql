@@ -14,20 +14,15 @@ FROM "Order";
 SELECT ProductID
 FROM OrderItem;
 
-
---Select the total order amounts from the "Order" table.
-SELECT TotalAmount
-FROM Order;
+--Select the first names of customers who joined in 2022.
 
 
---Select the quantity of products in the "OrderItem" table.
-SELECT Quantity
-FROM OrderItem;
+--Select the product names and quantities from the "Product" and "OrderItem" tables.
 
 
---Select the first name and phone number of customers.
-SELECT FirstName, Phone
-FROM Customer;
+
+--Select the email addresses of customers who joined in 2020.
+
 
 
 --Select the total order amounts for orders with an amount greater than 700.
