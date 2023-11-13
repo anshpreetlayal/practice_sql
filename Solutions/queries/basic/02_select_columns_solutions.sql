@@ -11,6 +11,8 @@ SELECT ProductID
 FROM OrderItem;
 
 ---4. SELECT Email FROM Customer;
+SELECT Email
+FROM Customer;
 
 ---5. SELECT ProductName FROM Product;
 
