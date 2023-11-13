@@ -51,6 +51,8 @@ SELECT Quantity
 FROM OrderItem;
 
 ---14. SELECT DateJoined FROM Customer;
+SELECT DateJoined
+FROM Customer;
 
 ---15. SELECT ProductID FROM Product;
 
