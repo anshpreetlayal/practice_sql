@@ -71,5 +71,7 @@ SELECT CustomerID
 FROM OrderItem;
 
 ---19. SELECT OrderID FROM OrderItem;
+SELECT OrderID
+FROM OrderItem;
 
 ---20. SELECT DateJoined, Email FROM Customer;
