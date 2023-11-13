@@ -29,7 +29,10 @@ FROM Customer;
 ---8. SELECT OrderItemID FROM OrderItem;
 SELECT OrderItem
 FROM OrderItem;
+
 ---9. SELECT Phone FROM Customer;
+SELECT Phone
+FROM Customer;
 
 ---10. SELECT Price FROM Product;
 
