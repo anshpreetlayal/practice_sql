@@ -47,6 +47,8 @@ SELECT OrderDate
 FROM Order;
 
 ---13. SELECT Quantity FROM OrderItem;
+SELECT Quantity
+FROM OrderItem;
 
 ---14. SELECT DateJoined FROM Customer;
 
