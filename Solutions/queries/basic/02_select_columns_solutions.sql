@@ -25,10 +25,8 @@ FROM OrderItem;
 
 
 
---Select the total order amounts for orders with an amount greater than 700.
-SELECT TotalAmount
-FROM Order
-WHERE TotalAmount > 700;
+--Select the last names of customers who placed orders with a total amount less than $400.
+
 
 
 --Select the product names and prices from the "Product" table.
