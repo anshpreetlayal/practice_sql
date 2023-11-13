@@ -44,8 +44,6 @@ WHERE TotalAmount > 700;
 SELECT ProductName, Price
 FROM Product;
 
-
-
 --Select the last names of customers who joined before 2020.
 
 
