@@ -43,6 +43,8 @@ SELECT LastName
 FROM Customer;
 
 ---12. SELECT OrderDate FROM "Order";
+SELECT OrderDate
+FROM Order;
 
 ---13. SELECT Quantity FROM OrderItem;
 
