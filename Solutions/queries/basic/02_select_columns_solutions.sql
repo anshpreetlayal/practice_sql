@@ -65,7 +65,10 @@ FROM Order;
 ---17. SELECT OrderItemID FROM OrderItem;
 SELECT OrderItem
 FROM OrderItem;
+
 ---18. SELECT CustomerID FROM OrderItem;
+SELECT CustomerID
+FROM OrderItem;
 
 ---19. SELECT OrderID FROM OrderItem;
 
