@@ -23,6 +23,8 @@ SELECT TotalAmount
 FROM Order;
 
 ---7. SELECT FirstName FROM Customer;
+SELECT FirstName
+FROM Customer;
 
 ---8. SELECT OrderItemID FROM OrderItem;
 
