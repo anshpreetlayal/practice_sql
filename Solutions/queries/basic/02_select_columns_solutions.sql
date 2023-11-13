@@ -1,5 +1,5 @@
 ---1. SELECT CustomerID FROM Customer;
-
+SELECT CustomerID
 ---2. SELECT OrderID, OrderDate FROM "Order";
 
 ---3. SELECT ProductID FROM OrderItem;
