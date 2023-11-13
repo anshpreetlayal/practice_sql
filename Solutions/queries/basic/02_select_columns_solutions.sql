@@ -55,6 +55,8 @@ SELECT DateJoined
 FROM Customer;
 
 ---15. SELECT ProductID FROM Product;
+SELECT ProductID
+FROM Product;
 
 ---16. SELECT CustomerID FROM "Order";
 
