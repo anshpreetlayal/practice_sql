@@ -35,8 +35,12 @@ SELECT Phone
 FROM Customer;
 
 ---10. SELECT Price FROM Product;
+SELECT Price
+FROM Product;
 
 ---11. SELECT LastName FROM Customer;
+SELECT LastName
+FROM Customer;
 
 ---12. SELECT OrderDate FROM "Order";
 
