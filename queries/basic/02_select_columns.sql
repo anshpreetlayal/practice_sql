@@ -1,41 +1,39 @@
---1. Select the first and last names of all customers.
+---1. SELECT CustomerID FROM Customer;
 
---2. Select the order dates from the "Order" table.
+---2. SELECT OrderID, OrderDate FROM "Order";
 
---3. Select the product names from the "Product" table.
+---3. SELECT ProductID FROM OrderItem;
 
---4. Select the email addresses of customers who joined in 2021.
+---4. SELECT Email FROM Customer;
 
---5. Select the total order amounts from the "Order" table.
+---5. SELECT ProductName FROM Product;
 
---6. Select the quantity of products in the "OrderItem" table.
+---6. SELECT TotalAmount FROM "Order";
 
---7. Select the first name and phone number of customers.
+---7. SELECT FirstName FROM Customer;
 
---8. Select the total order amounts for orders with an amount greater than 700.
+---8. SELECT OrderItemID FROM OrderItem;
 
---9. Select the product names and prices from the "Product" table.
+---9. SELECT Phone FROM Customer;
 
---10. Select the last names of customers who joined before 2020.
+---10. SELECT Price FROM Product;
 
---11. Select the order IDs and customer IDs from the "Order" table.
+---11. SELECT LastName FROM Customer;
 
---12. Select the order dates and total order amounts from the "Order" table.
+---12. SELECT OrderDate FROM "Order";
 
---13. Select the product IDs from the "OrderItem" table.
+---13. SELECT Quantity FROM OrderItem;
 
---14. Select the first names of customers who joined in 2022.
+---14. SELECT DateJoined FROM Customer;
 
---15. Select the product names and quantities from the "Product" and "OrderItem" tables.
+---15. SELECT ProductID FROM Product;
 
--- 16. Select the email addresses of customers who joined in 2020.
+---16. SELECT CustomerID FROM "Order";
 
---17. Select the last names of customers who placed orders with a total amount less than $400.
+---17. SELECT OrderItemID FROM OrderItem;
 
---18. Select the product names from the "Product" table that have a price higher than $50.
+---18. SELECT CustomerID FROM OrderItem;
 
---19. Select the total order amounts for orders placed by customers with a first name starting with 'A'.
+---19. SELECT OrderID FROM OrderItem;
 
---20. Select the order dates and total order amounts from the "Order" table for orders placed in January 2023.
-
-
+---20. SELECT DateJoined, Email FROM Customer;
