@@ -15,6 +15,8 @@ SELECT Email
 FROM Customer;
 
 ---5. SELECT ProductName FROM Product;
+SELECT ProductName
+FROM Product;
 
 ---6. SELECT TotalAmount FROM "Order";
 
