@@ -1,8 +1,7 @@
-
---Select the first and last names of all customers.
-SELECT FirstName, LastName
-FROM Customer;
-
+--Select the last names of customers who joined before 2020.
+SELECT LastName
+FROM Customer
+WHERE DateJoined < '2020-01-01';
 --Select the order dates from the "Order" table.
 SELECT OrderDate
 FROM Order;
