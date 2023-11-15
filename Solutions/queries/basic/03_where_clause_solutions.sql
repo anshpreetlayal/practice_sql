@@ -56,3 +56,5 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 
 ---14. Retrieve orders placed by customers with names starting with 'J'.
 
+---15. Fetch orders made by a specific CustomerID and with TotalAmount over $700.
+
