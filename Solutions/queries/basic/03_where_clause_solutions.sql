@@ -47,3 +47,6 @@ WHERE o.OrderDate BETWEEN '2023-01-01' AND '2023-01-31';
 SELECT OrderID, CustomerID
 FROM "Order"
 WHERE TotalAmount BETWEEN 400 AND 500;
+
+---11. Retrieve orders with a TotalAmount greater than $500.
+
