@@ -4,7 +4,7 @@ FROM Order o
 JOIN Customer c ON o.CustomerID = c.CustomerID
 WHERE c.FirstName = 'John' AND c.LastName = 'Doe';
 
---Which customers joined before September 2020?
+-- 2. Which customers joined before September 2020?
 SELECT FirstName, LastName
 FROM Customer
 WHERE DateJoined < '2020-09-01';
