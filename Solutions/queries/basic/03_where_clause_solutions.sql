@@ -50,3 +50,5 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 
 ---11. Retrieve orders with a TotalAmount greater than $500.
 
+---12. Fetch orders made by a specific CustomerID.
+
