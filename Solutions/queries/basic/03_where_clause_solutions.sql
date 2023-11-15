@@ -17,7 +17,7 @@ JOIN "Order" o ON oi.OrderID = o.OrderID
 JOIN Customer c ON o.CustomerID = c.CustomerID
 WHERE c.FirstName = 'Sophia' AND c.LastName = 'Williams';
 
---Retrieve all orders with a total amount greater than $600.
+-- 4. Retrieve all orders with a total amount greater than $600.
 SELECT *
 FROM "Order"
 WHERE TotalAmount > 600;
