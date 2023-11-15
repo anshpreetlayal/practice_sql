@@ -22,7 +22,7 @@ SELECT *
 FROM "Order"
 WHERE TotalAmount > 600;
 
---List the products with a price lower than $25.
+-- 5. List the products with a price lower than $25.
 SELECT ProductName
 FROM Product
 WHERE Price < 25;
