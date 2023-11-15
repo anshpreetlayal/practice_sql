@@ -1,4 +1,4 @@
---Find the total amount of orders placed by customer John Doe.
+-- 1. Find the total amount of orders placed by customer John Doe.
 SELECT SUM(o.TotalAmount)
 FROM Order o
 JOIN Customer c ON o.CustomerID = c.CustomerID
