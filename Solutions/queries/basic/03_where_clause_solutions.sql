@@ -54,3 +54,5 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 
 ---13. Fetch orders with an OrderDate older than '2022-06-01'.
 
+---14. Retrieve orders placed by customers with names starting with 'J'.
+
