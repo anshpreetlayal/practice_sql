@@ -52,3 +52,5 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 
 ---12. Fetch orders made by a specific CustomerID.
 
+---13. Fetch orders with an OrderDate older than '2022-06-01'.
+
