@@ -9,7 +9,7 @@ SELECT FirstName, LastName
 FROM Customer
 WHERE DateJoined < '2020-09-01';
 
---What products were ordered by customer Sophia Williams?
+-- 3. What products were ordered by customer Sophia Williams?
 SELECT p.ProductName
 FROM Product p
 JOIN OrderItem oi ON p.ProductID = oi.ProductID
