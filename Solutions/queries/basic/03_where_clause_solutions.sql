@@ -75,6 +75,10 @@ WHERE DateJoined >= "2019-01-01";
 
 --14.  Retrieve all orders with a total amount between $300 and $400.
 --15. List the products with a price between $20 and $30.
+SELECT *
+FROM Product
+WHERE Price BETWEEN 20 AND 30;
+
 --16. Find the email address of the customer who made the earliest order.
 SELECT c.Email
 FROM Customer c
