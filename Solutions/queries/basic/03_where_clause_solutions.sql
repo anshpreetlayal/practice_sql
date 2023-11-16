@@ -77,6 +77,11 @@ WHERE DateJoined >= "2019-01-01";
 --15. List the products with a price between $20 and $30.
 --16. Find the email address of the customer who made the earliest order.
 --17.Which customers placed orders in February 2022?
+SELECT DISTINCT c.FirstName, c.LastName
+FROM Customer C
+JOIN "Order" O ON C.CustomerID = O.CustomerID
+Where O.OrderDate BETWEEN "2022-02-01" AND "2022-02-28";
+
 --18. Retrieve the order date and total order amounts for orders placed by customers who joined in 2020 or earlier.
 SELECT O.OrderDate, O.TotalAmount
 FROM Customer C
