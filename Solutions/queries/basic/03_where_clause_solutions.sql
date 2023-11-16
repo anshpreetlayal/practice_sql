@@ -67,6 +67,9 @@ JOIN OrderItem OI ON O.OrderID = OI.OrderID
 WHERE C.FirstName = "James" AND C.LastName = "Davis";
 
 --12. Which customers joined in 2019 or later?
+SELECT *
+FROM Customer
+WHERE DateJoined >= "2019-01-01";
 
 --13. What products were ordered by customer Emily Johnson in orders with a total amount greater than $500?
 
