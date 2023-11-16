@@ -55,3 +55,4 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 --13. What products were ordered by customer Emily Johnson in orders with a total amount greater than $500?
 
 --14.  Retrieve all orders with a total amount between $300 and $400.
+--15. List the products with a price between $20 and $30.
