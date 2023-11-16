@@ -72,6 +72,13 @@ FROM Customer
 WHERE DateJoined >= "2019-01-01";
 
 --13. What products were ordered by customer Emily Johnson in orders with a total amount greater than $500?
+SELECT p.ProductName
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+JOIN OrderItem oi ON oi.OrderID = o.OrderID
+JOIN Product p ON p.ProductID = oi.ProductID
+WHERE c.FirstName = 'Emily' AND c.LastName = 'Johnson'
+  AND o.TotalAmount > 500;
 
 --14.  Retrieve all orders with a total amount between $300 and $400.
 SELECT *
