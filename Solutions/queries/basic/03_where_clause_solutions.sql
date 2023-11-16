@@ -58,3 +58,4 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 --15. List the products with a price between $20 and $30.
 --16. Find the email address of the customer who made the earliest order.
 --17.Which customers placed orders in February 2022?
+--18. Retrieve the order date and total order amounts for orders placed by customers who joined in 2020 or earlier.
