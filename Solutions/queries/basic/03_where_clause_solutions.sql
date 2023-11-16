@@ -42,7 +42,7 @@ WHERE o.OrderDate BETWEEN '2023-01-01' AND '2023-01-31';
 -- 8. Retrieve the order date and total amount for orders placed by customers who joined in 2021.
 SELECT O.OrderDate, O.TotalAmount
 FROM Order O
-
+JOIN Customers C ON O.CustomerID = C.CustomerID
 -- 9. What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
 
 -- 10. List the order IDs and customer IDs for orders with a total amount between $400 and $500.
