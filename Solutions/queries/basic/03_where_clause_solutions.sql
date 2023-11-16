@@ -64,8 +64,6 @@ SELECT SUM (OI.Quantity)  AS TotalQuantity
 FROM Customer C
 JOIN Order 0 ON C.CustomerID = O.CustomerID
 JOIN OrderItem OI ON O.OrderID = OI.OrderID
-
-
 WHERE C.FirstName = "James" AND C.LastName = "Davis";
 
 --12. Which customers joined in 2019 or later?
