@@ -44,6 +44,7 @@ SELECT O.OrderDate, O.TotalAmount
 FROM Order O
 JOIN Customers C ON O.CustomerID = C.CustomerID
 WHERE YEAR (C.DateJoined) = 2021;
+
 -- 9. What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
 SELECT P.ProductName
 FROM Product P
