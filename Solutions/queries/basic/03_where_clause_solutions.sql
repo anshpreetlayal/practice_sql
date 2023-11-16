@@ -57,3 +57,4 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 --14.  Retrieve all orders with a total amount between $300 and $400.
 --15. List the products with a price between $20 and $30.
 --16. Find the email address of the customer who made the earliest order.
+--17.Which customers placed orders in February 2022?
