@@ -52,3 +52,6 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 
 --12. Which customers joined in 2019 or later?
 
+--13. What products were ordered by customer Emily Johnson in orders with a total amount greater than $500?
+
+--14.  Retrieve all orders with a total amount between $300 and $400.
