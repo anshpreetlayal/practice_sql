@@ -78,6 +78,7 @@ WHERE DateJoined >= "2019-01-01";
 --16. Find the email address of the customer who made the earliest order.
 --17.Which customers placed orders in February 2022?
 --18. Retrieve the order date and total order amounts for orders placed by customers who joined in 2020 or earlier.
+
 --19. What products were ordered by customer Noah Martin in orders placed on or after September 2022?
 SELECT DISTINCT P.ProductName
 FROM Customer C
