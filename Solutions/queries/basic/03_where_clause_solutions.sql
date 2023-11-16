@@ -48,12 +48,6 @@ SELECT OrderID, CustomerID
 FROM "Order"
 WHERE TotalAmount BETWEEN 400 AND 500;
 
----11. Retrieve orders with a TotalAmount greater than $500.
-
----12. Fetch orders made by a specific CustomerID.
-
----13. Fetch orders with an OrderDate older than '2022-06-01'.
-
----14. Retrieve orders placed by customers with names starting with 'J'.
+--11. Find the total quantity of products ordered by customer James Davis.
 
 
