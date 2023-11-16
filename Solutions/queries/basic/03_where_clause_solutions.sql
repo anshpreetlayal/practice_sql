@@ -47,6 +47,12 @@ WHERE YEAR (C.DateJoined) = 2021;
 -- 9. What products were ordered by customer Ava Moore in her order placed on September 10, 2022?
 SELECT P.ProductName
 FROM Product P
+JOIN OrderItem OI ON P.ProductID = OI.ProductID
+JOIN "Order" O ON OI.OrderID = O.OrderID
+JOIN Customer C ON O.CustomerID = C.CustomerID
+WHERE C.FirstName = "Ava" AND C.LastName = "Moore"
+AND O.OrderDate = '2022-09-10';
+
 -- 10. List the order IDs and customer IDs for orders with a total amount between $400 and $500.
 SELECT OrderID, CustomerID
 FROM "Order"
