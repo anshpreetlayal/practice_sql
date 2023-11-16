@@ -50,4 +50,5 @@ WHERE TotalAmount BETWEEN 400 AND 500;
 
 --11. Find the total quantity of products ordered by customer James Davis.
 
+--12. Which customers joined in 2019 or later?
 
