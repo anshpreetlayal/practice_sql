@@ -74,6 +74,10 @@ WHERE DateJoined >= "2019-01-01";
 --13. What products were ordered by customer Emily Johnson in orders with a total amount greater than $500?
 
 --14.  Retrieve all orders with a total amount between $300 and $400.
+SELECT *
+FROM "Order"
+WHERE TotalAmount BETWEEN 300 and 400;
+
 --15. List the products with a price between $20 and $30.
 SELECT *
 FROM Product
