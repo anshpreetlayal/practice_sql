@@ -79,6 +79,7 @@ WHERE DateJoined >= "2019-01-01";
 --17.Which customers placed orders in February 2022?
 --18. Retrieve the order date and total order amounts for orders placed by customers who joined in 2020 or earlier.
 --19. What products were ordered by customer Noah Martin in orders placed on or after September 2022?
+
 --20. List the order IDs and customer IDs for orders with a total amount greater than $800.
 SELECT O.OrderID, O.CustomerID
 FROM "Order" O
