@@ -60,6 +60,12 @@ FROM "Order"
 WHERE TotalAmount BETWEEN 400 AND 500;
 
 --11. Find the total quantity of products ordered by customer James Davis.
+SELECT TotalAmount
+FROM Order O
+JOIN Order O ON  OI.Quantity
+JOIN  Customer C ON O.CustomerID = C.CustomerID
+JOIN Order O ON OI.OrderID = O.OrderID
+WHERE C.FirstName = "James" AND C.LastName = "Davis";
 
 --12. Which customers joined in 2019 or later?
 
