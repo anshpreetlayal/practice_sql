@@ -1,2 +1,3 @@
 ---1. Retrieve the count of orders placed by each customer.
 ---2. Get the total sales amount for each product.
+---3. Find the maximum order amount placed by each customer.
