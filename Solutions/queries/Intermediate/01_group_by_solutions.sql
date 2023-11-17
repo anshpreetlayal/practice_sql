@@ -4,3 +4,4 @@
 ---4. Retrieve the number of orders placed in each year.
 ---5. Get the total quantity sold for each product.
 ---6. Find the average order amount for each customer.
+---7. Retrieve the count of products within different price ranges.
