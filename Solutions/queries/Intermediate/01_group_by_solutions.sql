@@ -11,3 +11,4 @@
 ---11. Get the average price for each product category.
 ---12. Find the maximum quantity ordered for each product.
 ---13. Retrieve the total number of orders for each product category.
+---14. Get the count of customers who joined each year.
