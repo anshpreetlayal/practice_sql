@@ -14,3 +14,4 @@
 ---14. Get the count of customers who joined each year.
 ---15. Find the minimum order amount for each customer.
 ---16. Retrieve the average quantity sold for each product.
+---17. Find the number of orders placed in each quarter of a year.
