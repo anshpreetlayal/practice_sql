@@ -7,3 +7,4 @@
 ---7. Retrieve the count of products within different price ranges.
 ---8. Get the earliest order date for each customer.
 ---9. Find the number of orders placed each month.
+---10. Retrieve the total sales amount for each year.
