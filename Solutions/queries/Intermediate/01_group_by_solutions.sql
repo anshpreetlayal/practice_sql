@@ -8,3 +8,4 @@
 ---8. Get the earliest order date for each customer.
 ---9. Find the number of orders placed each month.
 ---10. Retrieve the total sales amount for each year.
+---11. Get the average price for each product category.
