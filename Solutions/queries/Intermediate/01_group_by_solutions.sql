@@ -16,3 +16,4 @@
 ---16. Retrieve the average quantity sold for each product.
 ---17. Find the number of orders placed in each quarter of a year.
 ---18. Retrieve the total sales amount for each month of a specific year.
+---19. Get the count of orders placed on each day of the week.
