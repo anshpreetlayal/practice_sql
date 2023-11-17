@@ -10,3 +10,4 @@
 ---10. Retrieve the total sales amount for each year.
 ---11. Get the average price for each product category.
 ---12. Find the maximum quantity ordered for each product.
+---13. Retrieve the total number of orders for each product category.
