@@ -1,4 +1,8 @@
 ---1. Retrieve the count of orders placed by each customer.
+SELECT  OrderID, CustomerID, SUM(TotalAmount) AS TotalCount
+FROM  Order
+GROUP BY CustomerID;
+
 ---2. Get the total sales amount for each product.
 ---3. Find the maximum order amount placed by each customer.
 ---4. Retrieve the number of orders placed in each year.
