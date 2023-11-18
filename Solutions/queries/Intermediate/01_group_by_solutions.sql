@@ -1,5 +1,5 @@
 ---1. Retrieve the count of orders placed by each customer.
-SELECT  OrderID, CustomerID, SUM(TotalAmount) AS TotalCount
+SELECT  CustomerID,  COUNT(OrderID) AS OrderCount
 FROM  Order
 GROUP BY CustomerID;
 
