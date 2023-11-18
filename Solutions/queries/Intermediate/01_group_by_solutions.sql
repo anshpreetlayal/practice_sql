@@ -6,7 +6,8 @@ GROUP BY CustomerID;
 ---2. Get the total sales amount for each product.
 SELECT ProductID,  SUM(Prices) AS TotalSales
 FROM Product
-Group by Product;
+Group by ProductID;
+
 
 ---3. Find the maximum order amount placed by each customer.
 ---4. Retrieve the number of orders placed in each year.
