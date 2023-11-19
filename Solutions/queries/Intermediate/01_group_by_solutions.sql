@@ -10,6 +10,10 @@ Group by ProductID;
 
 
 ---3. Find the maximum order amount placed by each customer.
+SELECT OrderID, CustomerID,  MAX(TotalAmount) AS MaxOrderAmount
+FROM Order
+GROUP BY CustomerID;
+
 ---4. Retrieve the number of orders placed in each year.
 ---5. Get the total quantity sold for each product.
 ---6. Find the average order amount for each customer.
