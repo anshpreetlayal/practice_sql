@@ -21,6 +21,10 @@ GROUP BY YEAR(OrderDate);
 
 
 ---5. Get the total quantity sold for each product.
+SELECT OrderID, SUM(Quantity) AS TotalQuantity
+FROM OrderItem
+GROUP BY  OrderID;
+
 ---6. Find the average order amount for each customer.
 ---7. Retrieve the count of products within different price ranges.
 ---8. Get the earliest order date for each customer.
