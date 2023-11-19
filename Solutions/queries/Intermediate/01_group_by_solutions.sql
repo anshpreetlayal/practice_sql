@@ -10,7 +10,7 @@ Group by ProductID;
 
 
 ---3. Find the maximum order amount placed by each customer.
-SELECT OrderID, CustomerID,  MAX(TotalAmount) AS MaxOrderAmount
+SELECT  CustomerID,  MAX(TotalAmount) AS MaxOrderAmount
 FROM Order
 GROUP BY CustomerID;
 
