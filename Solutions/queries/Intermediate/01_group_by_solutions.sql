@@ -15,9 +15,10 @@ FROM Order
 GROUP BY CustomerID;
 
 ---4. Retrieve the number of orders placed in each year.
-SELECT  OrderID,  COUNT(TotalAmount) AS OrdersEachyear
-FROM ORDER
-GROUP BY OrderID;
+SELECT YEAR(OrderDate) AS OrderYear, COUNT(*) AS OrdersPerYear
+FROM "Order"
+GROUP BY YEAR(OrderDate);
+
 
 ---5. Get the total quantity sold for each product.
 ---6. Find the average order amount for each customer.
