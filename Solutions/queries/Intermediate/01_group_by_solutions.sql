@@ -4,7 +4,7 @@ FROM  Order
 GROUP BY CustomerID;
 
 ---2. Get the total sales amount for each product.
-SELECT ProductID,  SUM(Prices) AS TotalSales
+SELECT ProductID,  SUM(Price) AS TotalSales
 FROM Product
 Group by ProductID;
 
