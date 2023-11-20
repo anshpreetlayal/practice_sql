@@ -31,6 +31,10 @@ FROM "Order"
 GROUP BY CustomerID;
 
 ---7. Retrieve the count of products within different price ranges.
+SELECT ProductID,  COUNT(Price) AS PriceRanges
+FROM Product
+GROUP BY ProductID;
+
 ---8. Get the earliest order date for each customer.
 ---9. Find the number of orders placed each month.
 ---10. Retrieve the total sales amount for each year.
