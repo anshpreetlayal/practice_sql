@@ -31,9 +31,16 @@ FROM "Order"
 GROUP BY CustomerID;
 
 ---7. Retrieve the count of products within different price ranges.
-SELECT ProductID,  COUNT(Price) AS PriceRanges
-FROM Product
-GROUP BY ProductID;
+SELECT
+     CASE
+        WHEN PRICE BETWEEN 0 AND 20 THEN '0-20'
+        WHEN PRICE BETWEEN  21 AND 40 THEN '21-40'
+        WHEN PRICE BETWEEN 41 AND 60 THEN '41-60'
+        ELSE 'Above 60'
+     END AS PriceRange
+     Count(*) AS
+
+
 
 ---8. Get the earliest order date for each customer.
 ---9. Find the number of orders placed each month.
