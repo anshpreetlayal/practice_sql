@@ -26,9 +26,9 @@ FROM OrderItem
 GROUP BY  OrderID;
 
 ---6. Find the average order amount for each customer.
-SELECT OrderID, AVG(TotalAmount) AS AverageOrderAMount
-FROM Order
-GROUP BY OrderID;
+SELECT CustomerID, AVG(TotalAmount) AS AverageOrderAmount
+FROM "Order"
+GROUP BY CustomerID;
 
 ---7. Retrieve the count of products within different price ranges.
 ---8. Get the earliest order date for each customer.
