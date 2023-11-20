@@ -55,9 +55,10 @@ FROM Order
 GROUP BY CustomerID;
 
 ---9. Find the number of orders placed each month.
-SELECT  OrderDate,  COUNT *  AS NumOFOrders
-FROM ORDER
-GROUP BY OrderDate;
+SELECT MONTH(OrderDate) AS Month, COUNT(*) AS NumOfOrders
+FROM `Order`
+GROUP BY MONTH(OrderDate);
+
 
 ---10. Retrieve the total sales amount for each year.
 ---11. Get the average price for each product category.
