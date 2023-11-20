@@ -50,6 +50,10 @@ GROUP BY
 
 
 ---8. Get the earliest order date for each customer.
+SELECT CustomerID, MIN(OrderDate) AS EarliestOrderDate
+FROM Order
+GROUP BY CustomerID;
+
 ---9. Find the number of orders placed each month.
 ---10. Retrieve the total sales amount for each year.
 ---11. Get the average price for each product category.
