@@ -33,13 +33,20 @@ GROUP BY CustomerID;
 ---7. Retrieve the count of products within different price ranges.
 SELECT
      CASE
-        WHEN PRICE BETWEEN 0 AND 20 THEN '0-20'
-        WHEN PRICE BETWEEN  21 AND 40 THEN '21-40'
-        WHEN PRICE BETWEEN 41 AND 60 THEN '41-60'
-        ELSE 'Above 60'
+        WHEN PRICE BETWEEN 0 AND 50 THEN '0-50'
+        WHEN PRICE BETWEEN  50  AND 100 THEN '50-100'
+        WHEN PRICE BETWEEN 100 AND 140 THEN '100-140'
+        ELSE 'Above 150'
      END AS PriceRange
-     Count(*) AS
-
+     Count(*) AS ProductsCount
+FROM Product
+GROUP BY
+     CASE
+         WHEN PRICE BETWEEN 0 AND 50 THEN '0-50'
+         WHEN PRICE BETWEEN  50  AND 100 THEN '50-100'
+         WHEN PRICE BETWEEN 100 AND 140 THEN '100-140'
+         ELSE 'Above 150'
+     END;
 
 
 ---8. Get the earliest order date for each customer.
