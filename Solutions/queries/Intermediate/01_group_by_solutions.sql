@@ -59,8 +59,8 @@ SELECT MONTH(OrderDate) AS Month, COUNT(*) AS NumOfOrders
 FROM `Order`
 GROUP BY MONTH(OrderDate);
 
-
 ---10. Retrieve the total sales amount for each year.
+SELECT
 ---11. Get the average price for each product category.
 ---12. Find the maximum quantity ordered for each product.
 ---13. Retrieve the total number of orders for each product category.
