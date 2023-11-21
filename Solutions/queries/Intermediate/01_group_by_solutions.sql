@@ -65,6 +65,9 @@ FROM ORDER
 GROUP BY YEAR(OrderDate);
 
 ---11. Get the average price for each product category.
+SELECT ProductID,  AVG(Price) AS AveragePrice
+FROM Product
+GROUP BY ProductID;
 ---12. Find the maximum quantity ordered for each product.
 ---13. Retrieve the total number of orders for each product category.
 ---14. Get the count of customers who joined each year.
