@@ -64,7 +64,8 @@ SELECT YEAR(OrderDate) AS Year, SUM(TotalAmount) AS TotalSalesAmount
 FROM `Order`
 GROUP BY YEAR(OrderDate);
 
----11. Get the average price for each product category.
+---11. Get the average price for each product.
+
 SELECT ProductID,  AVG(Price) AS AveragePrice
 FROM Product
 GROUP BY ProductID;
