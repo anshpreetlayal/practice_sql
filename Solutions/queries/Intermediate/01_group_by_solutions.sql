@@ -69,13 +69,15 @@ SELECT ProductID, AVG(Price) AS AveragePrice
 FROM Product
 GROUP BY ProductID;
 
-
 ---12. Find the maximum quantity ordered for each product.
 SELECT ProductID, MAX(Quantity) AS MAXQuantity
 FROM OrderItem
 GROUP BY ProductID;
 
 ---13. Retrieve the total number of orders for each product category.
+SELECT ProductID, COUNT(OrderID) AS TotalOrders
+FROM OrderItem
+GROUP BY ProductID;
 
 ---14. Get the count of customers who joined each year.
 
