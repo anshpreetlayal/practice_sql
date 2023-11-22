@@ -75,6 +75,7 @@ FROM OrderItem
 GROUP BY ProductID;
 
 ---13. Retrieve the total number of orders for each product category.
+
 ---14. Get the count of customers who joined each year.
 ---15. Find the minimum order amount for each customer.
 ---16. Retrieve the average quantity sold for each product.
