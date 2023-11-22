@@ -80,6 +80,9 @@ FROM OrderItem
 GROUP BY ProductID;
 
 ---14. Get the count of customers who joined each year.
+SELECT YEAR(DateJoined) AS JoinYear, COUNT(CustomerID) AS CustomersCount
+FROM Customer
+GROUP BY JoinYear;
 
 ---15. Find the minimum order amount for each customer.
 ---16. Retrieve the average quantity sold for each product.
