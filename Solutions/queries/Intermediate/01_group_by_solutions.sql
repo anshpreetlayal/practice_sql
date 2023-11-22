@@ -65,10 +65,10 @@ FROM `Order`
 GROUP BY YEAR(OrderDate);
 
 ---11. Get the average price for each product.
-
-SELECT ProductID,  AVG(Price) AS AveragePrice
+SELECT ProductID, AVG(Price) AS AveragePrice
 FROM Product
 GROUP BY ProductID;
+
 
 ---12. Find the maximum quantity ordered for each product.
 SELECT ProductID, MAX(Quantity) AS MAXQuantity
