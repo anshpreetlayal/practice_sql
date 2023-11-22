@@ -110,5 +110,7 @@ WHERE YEAR(OrderDate) = 2020
 GROUP BY OrderYear, OrderMonth;
 
 ---19. Get the count of orders placed on each day of the week.
+
+
 ---20. Find the total number of products in different categories.
 
