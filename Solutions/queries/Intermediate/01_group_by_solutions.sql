@@ -60,8 +60,8 @@ FROM `Order`
 GROUP BY MONTH(OrderDate);
 
 ---10. Retrieve the total sales amount for each year.
-SELECT OrderID, YEAR(OrderDate) AS YEAR, COUNT(TotalAmount) AS TotalSalesInYear
-FROM ORDER
+SELECT YEAR(OrderDate) AS Year, SUM(TotalAmount) AS TotalSalesAmount
+FROM `Order`
 GROUP BY YEAR(OrderDate);
 
 ---11. Get the average price for each product category.
