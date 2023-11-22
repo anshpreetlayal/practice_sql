@@ -59,10 +59,7 @@ SELECT MONTH(OrderDate) AS Month, COUNT(*) AS NumOfOrders
 FROM `Order`
 GROUP BY MONTH(OrderDate);
 
----10. Retrieve the total sales amount for each year.
-SELECT OrderID, YEAR(OrderDate) AS YEAR, COUNT(TotalAmount) AS TotalSalesInYear
-FROM ORDER
-GROUP BY YEAR(OrderDate);
+
 
 ---11. Get the average price for each product category.
 SELECT ProductID,  AVG(Price) AS AveragePrice
@@ -77,6 +74,7 @@ GROUP BY ProductID;
 ---13. Retrieve the total number of orders for each product category.
 
 ---14. Get the count of customers who joined each year.
+
 ---15. Find the minimum order amount for each customer.
 ---16. Retrieve the average quantity sold for each product.
 ---17. Find the number of orders placed in each quarter of a year.
