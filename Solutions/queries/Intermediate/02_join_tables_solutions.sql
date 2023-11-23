@@ -1,4 +1,7 @@
 --1. Retrieve orders with customer information.
+SELECT *
+FROM "Order" o
+JOIN Customer c ON o.CustomerID = c.CustomerID;
 
 --2. Get order details along with product information.
 
