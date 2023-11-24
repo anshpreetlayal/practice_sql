@@ -30,6 +30,9 @@ FROM OrderItem oi
 JOIN Product p ON oi.ProductID = p.ProductID;
 
 --7. Fetch customer information for orders with total amounts.
+SELECT c.FirstName, c.LastName, c.Email, c.Phone, o.TotalAmount
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 --8. Get product details along with order quantities.
 
