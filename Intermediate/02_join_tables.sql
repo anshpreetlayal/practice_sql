@@ -1,8 +1,3 @@
---Syntax for help
-SELECT columns
-FROM table1
-JOIN table2 ON table1.column_name = table2.column_name;
-
 --1. Retrieve orders with customer information.
 SELECT o.OrderID, c.FirstName, c.LastName, c.Email, c.Phone
 FROM "Order" o
@@ -20,6 +15,9 @@ FROM Customer c
 JOIN Order o ON c.CustomerID = o.CustomerID;
 
 --4. Get product details for each order item.
+SELECT oi.OrderItemID, oi.OrderID, oi.ProductID, oi.Quantity, p.ProductName, p.Price
+FROM OrderItem oi
+JOIN Product p ON oi.ProductID = p.ProductID;
 
 --5. Retrieve orders with customer names and order dates.
 
