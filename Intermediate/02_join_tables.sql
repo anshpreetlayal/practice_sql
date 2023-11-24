@@ -20,6 +20,9 @@ FROM OrderItem oi
 JOIN Product p ON oi.ProductID = p.ProductID;
 
 --5. Retrieve orders with customer names and order dates.
+SELECT o.OrderID, c.FirstName, c.LastName, o.OrderDate
+FROM "Order" o
+JOIN Customer c ON o.CustomerID = c.CustomerID;
 
 --6. Get product names along with their prices for each order item.
 
