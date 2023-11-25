@@ -61,6 +61,9 @@ JOIN OrderItem oi ON o.OrderID = oi.OrderID
 JOIN Product p ON oi.ProductID = p.ProductID;
 
 --13. Retrieve orders with customer names and order total amounts.
+SELECT c.FirstName, c.LastName, o.TotalAmount
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 --14. Get product names and prices for each order item.
 
