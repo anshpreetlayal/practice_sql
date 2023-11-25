@@ -55,6 +55,10 @@ FROM Customer c
 JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 --12. Get order details along with product names and quantities.
+SELECT o.OrderID, p.ProductName, oi.Quantity
+FROM "Order" o
+JOIN OrderItem oi ON o.OrderID = oi.OrderID
+JOIN Product p ON oi.ProductID = p.ProductID;
 
 --13. Retrieve orders with customer names and order total amounts.
 
