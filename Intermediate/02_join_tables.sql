@@ -77,11 +77,15 @@ JOIN "Order" o ON c.CustomerID = o.CustomerID
 WHERE EXTRACT(YEAR FROM o.OrderDate) = 2023;
 
 --16. Get order details along with product names and quantities for orders placed.
+SELECT o.OrderID, p.ProductName, oi.Quantity
+FROM "Order" o
+JOIN OrderItem oi ON o.OrderID = oi.OrderID
+JOIN Product p ON oi.ProductID = p.ProductID;
 
 --17. Retrieve orders with customer names and total order amounts placed in 2022.
+SELECT c.FirstName, c.LastName, o.TotalAmount
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE EXTRACT(YEAR FROM o.OrderDate) = 2022;
 
---18.Get product names and prices for each order item placed in 2021.
 
---19.Fetch customer names and order dates for orders placed in 2020.
-
---20. Get order details along with product names and quantities for orders placed in 2019.
