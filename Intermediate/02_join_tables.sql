@@ -71,6 +71,10 @@ FROM Product p
 JOIN OrderItem oi ON p.ProductID = oi.ProductID;
 
 --15. Fetch customer names and order dates for orders placed in 2023.
+SELECT c.FirstName, c.LastName, o.OrderDate
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE EXTRACT(YEAR FROM o.OrderDate) = 2023;
 
 --16. Get order details along with product names and quantities for orders placed.
 
