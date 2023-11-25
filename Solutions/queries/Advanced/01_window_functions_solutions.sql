@@ -5,3 +5,6 @@
 ---5. What query can display the total sales amount for each year using the SUM window function?
 ---6. Retrieve the cumulative sum of product quantities ordered using the SUM window function.
 ---7. Can you rank customers based on their total order amounts using the RANK window function?
+---8. How to fetch product details along with order quantities using the PARTITION BY clause with the SUM window function?
+---9. Get customer information for orders with total amounts using the PARTITION BY clause with the SUM window function.
+---10. Retrieve product names and prices for each order item using the PARTITION BY clause with the ROW_NUMBER window function.
