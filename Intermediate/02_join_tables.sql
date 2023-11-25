@@ -95,4 +95,9 @@ JOIN OrderItem oi ON p.ProductID = oi.ProductID
 JOIN "Order" o ON oi.OrderID = o.OrderID
 WHERE EXTRACT(YEAR FROM o.OrderDate) = 2021;
 
+--19.Fetch customer names and order dates for orders placed in 2020.
+SELECT c.FirstName, c.LastName, o.OrderDate
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE EXTRACT(YEAR FROM o.OrderDate) = 2020;
 
