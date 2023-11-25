@@ -13,3 +13,6 @@
 ---13. Retrieve orders with customer names and order total amounts using the PARTITION BY clause with the SUM window function.
 ---14. Fetch product names and prices for each order item using the PARTITION BY clause with the ROW_NUMBER window function.
 ---15. Get customer names and order dates for orders placed in 2022 using the PARTITION BY clause with the FILTER/WHERE condition.
+---16. How to get order details along with product names and quantities for orders placed using the PARTITION BY clause with the SUM window function?
+---17. Retrieve orders with customer names and total order amounts placed in 2021 using the PARTITION BY clause with the SUM window function.
+---18. Fetch product names and prices for each order item placed in 2020 using the PARTITION BY clause with the ROW_NUMBER window function.
