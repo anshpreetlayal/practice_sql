@@ -116,4 +116,7 @@ GROUP BY DAY(OrderDate);
 
 
 ---20. Find the total number of products in different categories.
+SELECT COUNT(ProductID) AS TotalProducts, ProductCategory
+FROM Product
+GROUP BY ProductCategory;
 
