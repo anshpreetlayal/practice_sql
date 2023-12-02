@@ -24,7 +24,13 @@ SELECT SUM ()
 SELECT
     CustomerID,
     RANK() OVER (ORDER BY TotalOrderAmount DESC) AS CustomerRank
-
+FROM (
+    SELECT
+        CustomerID,
+        SUM(TotalAmount) AS TotalOrderAmount
+    FROM "Order"
+    GROUP BY CustomerID
+) AS CustomerTotalAmount
 
 ---8. How to fetch product details along with order quantities using the PARTITION BY clause with the SUM window function?
 
