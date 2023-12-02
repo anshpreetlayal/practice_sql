@@ -3,7 +3,8 @@ SELECT ProductName, Price, RANK() OVER (ORDER BY Price) AS PriceRank
 FROM Product;
 
 ---2. How can you calculate the running total of sales amount for each order using the SUM window function?
-
+SELECT OrderID, TotalAmount, SUM(TotalAmount) OVER (ORDER BY OrderID) AS RunningTotal
+FROM "Order";
 ---3. Retrieve the average price of products within their respective categories using the AVG window function.
 
 ---4. Get the row number of customers ordered by their joining dates using the ROW_NUMBER window function.
