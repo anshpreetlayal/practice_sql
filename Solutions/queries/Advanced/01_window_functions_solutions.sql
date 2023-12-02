@@ -33,6 +33,13 @@ FROM (
 ) AS CustomerTotalAmount
 
 ---8. How to fetch product details along with order quantities using the PARTITION BY clause with the SUM window function?
+SELECT
+    ProductID,
+    ProductName,
+    Quantity,
+    SUM(Quantity) OVER (PARTITION BY ProductID) AS TotalQuantityOrdered
+FROM OrderItem
+JOIN Product ON OrderItem.ProductID = Product.ProductID;
 
 ---9. Get customer information for orders with total amounts using the PARTITION BY clause with the SUM window function.
 
