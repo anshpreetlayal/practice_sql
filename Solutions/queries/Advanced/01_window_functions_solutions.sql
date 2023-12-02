@@ -1,4 +1,6 @@
 ---1. What SQL query would rank products based on their prices using the ROW_NUMBER window function?
+SELECT ProductName, Price, RANK() OVER (ORDER BY Price) AS PriceRank
+FROM Product;
 
 ---2. How can you calculate the running total of sales amount for each order using the SUM window function?
 
