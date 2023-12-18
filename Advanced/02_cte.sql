@@ -32,3 +32,9 @@
 --16. Calculate the total sales amount for each product.
 
 --17. Retrieve the count of orders placed on each day of the week.
+
+--18. Find the total number of products in different categories.
+
+--19. Determine the count of distinct products ordered by each customer.
+
+--20. Fetch the top 5 customers with the highest total order amounts.
