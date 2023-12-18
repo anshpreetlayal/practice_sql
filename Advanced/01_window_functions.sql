@@ -14,6 +14,9 @@ SELECT ProductID, ProductName, Price,
 FROM Product;
 
 ---4. Get the row number of customers ordered by their joining dates using the ROW_NUMBER window function.
+SELECT CustomerID, FirstName, LastName, DateJoined,
+       ROW_NUMBER() OVER (ORDER BY DateJoined) AS JoiningDateRank
+FROM Customer;
 
 ---5. What query can display the total sales amount for each year using the SUM window function?
 
