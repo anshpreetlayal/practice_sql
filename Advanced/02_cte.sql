@@ -26,3 +26,9 @@
 --13. Retrieve the minimum and maximum dates of orders for each customer.
 
 --14. Get the average quantity of products ordered by each customer.
+
+--15. Rank customers based on the number of orders they've placed.
+
+--16. Calculate the total sales amount for each product.
+
+--17. Retrieve the count of orders placed on each day of the week.
