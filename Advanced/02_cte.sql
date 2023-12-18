@@ -18,3 +18,11 @@
 --9. Fetch product names and prices for each order item.
 
 --10. Determine the count of orders placed by each customer in a specific month.
+
+--11. Calculate the running total of order amounts for each customer.
+
+--12. Find the maximum order amount placed by each customer.
+
+--13. Retrieve the minimum and maximum dates of orders for each customer.
+
+--14. Get the average quantity of products ordered by each customer.
