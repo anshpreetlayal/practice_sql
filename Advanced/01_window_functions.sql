@@ -4,6 +4,9 @@ SELECT ProductID, ProductName, Price,
 FROM Product;
 
 ---2. How can you calculate the running total of sales amount for each order using the SUM window function?
+SELECT OrderID, TotalAmount,
+       SUM(TotalAmount) OVER (ORDER BY OrderDate) AS RunningTotal
+FROM "Order";
 
 ---3. Retrieve the average price of products within their respective categories using the AVG window function.
 
