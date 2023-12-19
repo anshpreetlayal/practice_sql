@@ -27,3 +27,13 @@
 --14. What are the limitations or drawbacks of using indexes in a database?
 
 --15. How do you ensure index statistics are up-to-date and accurate?
+
+--16. Explain the role of index hints in SQL query optimization.
+
+--17. Describe scenarios where indexing might not be beneficial or recommended.
+
+--18. How does indexing affect the execution plan of a query in SQL?
+
+--19. Discuss the process of disabling and enabling an index in SQL.
+
+--20. Illustrate the steps to determine which columns should be indexed for a specific query or table.
