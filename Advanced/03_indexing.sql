@@ -7,3 +7,9 @@
 --4. Describe the process of dropping an index from a table in SQL.
 
 --5. How do you add a composite index involving multiple columns in a table?
+
+--6. Explain the difference between a clustered and non-clustered index.
+
+--7. How does indexing affect INSERT, UPDATE, and DELETE operations on a table?
+
+--8. Illustrate how you'd check if an index exists on a particular table and column in SQL.
