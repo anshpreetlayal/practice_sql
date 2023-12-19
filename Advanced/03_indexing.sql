@@ -19,3 +19,11 @@
 --10. Explain the impact of indexing on sorting and searching operations in SQL.
 
 --11. How do you identify unused or redundant indexes in a database?
+
+--12. Describe the process of rebuilding or reorganizing an index in SQL.
+
+--13. Explain the concept of covering indexes and their benefits in query optimization.
+
+--14. What are the limitations or drawbacks of using indexes in a database?
+
+--15. How do you ensure index statistics are up-to-date and accurate?
