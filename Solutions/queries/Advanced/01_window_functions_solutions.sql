@@ -80,6 +80,10 @@ FROM "Order" o
 JOIN Customer c ON o.CustomerID = c.CustomerID;
 
 ---14. Fetch product names and prices for each order item using the PARTITION BY clause with the ROW_NUMBER window function.
+SELECT oi.OrderItemID, oi.ProductID, p.ProductName, p.Price,
+       ROW_NUMBER() OVER (PARTITION BY oi.OrderID ORDER BY oi.OrderItemID) AS RowNumber
+FROM OrderItem oi
+JOIN Product p ON oi.ProductID = p.ProductID;
 
 ---15. Get customer names and order dates for orders placed in 2022 using the PARTITION BY clause with the FILTER/WHERE condition.
 
