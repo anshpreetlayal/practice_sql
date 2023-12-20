@@ -74,6 +74,10 @@ JOIN OrderItem oi ON o.OrderID = oi.OrderID
 JOIN Product p ON oi.ProductID = p.ProductID;
 
 ---13. Retrieve orders with customer names and order total amounts using the PARTITION BY clause with the SUM window function.
+SELECT c.FirstName, c.LastName, o.OrderID, o.TotalAmount,
+       SUM(o.TotalAmount) OVER (PARTITION BY c.CustomerID) AS CustomerTotalAmount
+FROM "Order" o
+JOIN Customer c ON o.CustomerID = c.CustomerID;
 
 ---14. Fetch product names and prices for each order item using the PARTITION BY clause with the ROW_NUMBER window function.
 
