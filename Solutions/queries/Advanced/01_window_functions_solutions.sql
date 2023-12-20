@@ -153,5 +153,15 @@ WHERE
     Row_Num = 2
 
 ---19. What SQL query fetches customer names and order dates for orders placed in 2019 using the PARTITION BY clause with the FILTER/WHERE condition?
+SELECT
+    c.FirstName,
+    c.LastName,
+    o.OrderDate
+FROM
+    "Order" o
+JOIN
+    Customer c ON o.CustomerID = c.CustomerID
+WHERE
+    EXTRACT(YEAR FROM o.OrderDate) = 2019
 
 ---20. How to get order details along with product names and quantities for orders placed in 2018 using the PARTITION BY clause with the SUM window function?
