@@ -92,6 +92,17 @@ JOIN "Order" o ON c.CustomerID = o.CustomerID
 WHERE EXTRACT(YEAR FROM o.OrderDate) = 2022;
 
 ---16. How to get order details along with product names and quantities for orders placed using the PARTITION BY clause with the SUM window function?
+SELECT
+    o.OrderID,
+    p.ProductName,
+    oi.Quantity,
+    SUM(oi.Quantity) OVER (PARTITION BY o.OrderID) AS TotalQuantityPerOrder
+FROM
+    "Order" o
+INNER JOIN
+    OrderItem oi ON o.OrderID = oi.OrderID
+INNER JOIN
+    Product p ON oi.ProductID = p.ProductID
 
 ---17. Retrieve orders with customer names and total order amounts placed in 2021 using the PARTITION BY clause with the SUM window function.
 
