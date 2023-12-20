@@ -86,6 +86,10 @@ FROM OrderItem oi
 JOIN Product p ON oi.ProductID = p.ProductID;
 
 ---15. Get customer names and order dates for orders placed in 2022 using the PARTITION BY clause with the FILTER/WHERE condition.
+SELECT c.FirstName, c.LastName, o.OrderDate
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE EXTRACT(YEAR FROM o.OrderDate) = 2022;
 
 ---16. How to get order details along with product names and quantities for orders placed using the PARTITION BY clause with the SUM window function?
 
