@@ -61,6 +61,10 @@ FROM OrderItem oi
 INNER JOIN Product p ON oi.ProductID = p.ProductID;
 
 ---11. Fetch customer names and order dates for orders placed in 2023 using the PARTITION BY clause with the FILTER/WHERE condition.
+SELECT c.FirstName, c.LastName, o.OrderDate
+FROM Customer c
+JOIN "Order" o ON c.CustomerID = o.CustomerID
+WHERE EXTRACT(YEAR FROM o.OrderDate) = 2023;
 
 ---12. Get order details along with product names and quantities using the PARTITION BY clause with the SUM window function.
 
