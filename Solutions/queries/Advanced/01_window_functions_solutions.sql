@@ -16,6 +16,9 @@ FROM Customer;
 
 
 ---5. What query can display the total sales amount for each year using the SUM window function?
+SELECT YEAR(OrderDate) AS OrderYear,
+       SUM(TotalAmount) OVER (PARTITION BY YEAR(OrderDate)) AS TotalSalesAmount
+FROM "Order";
 
 
 ---6. Retrieve the cumulative sum of product quantities ordered using the SUM window function.
