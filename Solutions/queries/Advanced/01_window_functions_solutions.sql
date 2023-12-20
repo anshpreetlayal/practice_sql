@@ -48,8 +48,14 @@ FROM OrderItem
 JOIN Product ON OrderItem.ProductID = Product.ProductID;
 
 ---9. Get customer information for orders with total amounts using the PARTITION BY clause with the SUM window function.
+SELECT c.CustomerID, c.FirstName, c.LastName, c.Email, c.Phone,
+       o.OrderID, o.TotalAmount,
+       SUM(o.TotalAmount) OVER (PARTITION BY c.CustomerID) AS TotalAmountPerCustomer
+FROM Customer c
+INNER JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 ---10. Retrieve product names and prices for each order item using the PARTITION BY clause with the ROW_NUMBER window function.
+SELECT oi.orderItemID, oi.OrderID, oi.ProductID, oi.Quantity, p.ProductName, p.Price
 
 ---11. Fetch customer names and order dates for orders placed in 2023 using the PARTITION BY clause with the FILTER/WHERE condition.
 
