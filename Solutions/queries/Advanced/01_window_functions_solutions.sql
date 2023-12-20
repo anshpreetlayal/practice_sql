@@ -55,7 +55,10 @@ FROM Customer c
 INNER JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 ---10. Retrieve product names and prices for each order item using the PARTITION BY clause with the ROW_NUMBER window function.
-SELECT oi.orderItemID, oi.OrderID, oi.ProductID, oi.Quantity, p.ProductName, p.Price
+SELECT oi.OrderItemID, oi.OrderID, oi.ProductID, oi.Quantity,
+       p.ProductName, p.Price
+FROM OrderItem oi
+INNER JOIN Product p ON oi.ProductID = p.ProductID;
 
 ---11. Fetch customer names and order dates for orders placed in 2023 using the PARTITION BY clause with the FILTER/WHERE condition.
 
