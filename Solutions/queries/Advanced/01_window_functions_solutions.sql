@@ -22,7 +22,10 @@ FROM "Order";
 
 
 ---6. Retrieve the cumulative sum of product quantities ordered using the SUM window function.
-SELECT SUM ()
+SELECT OrderItemID, OrderID, ProductID, Quantity,
+       SUM(Quantity) OVER (ORDER BY OrderItemID) AS CumulativeQuantity
+FROM OrderItem;
+
 ---7. Can you rank customers based on their total order amounts using the RANK window function?
 SELECT
     CustomerID,
