@@ -128,6 +128,29 @@ FROM
     OrderInfo
 
 ---18. Fetch product names and prices for each order item placed in 2020 using the PARTITION BY clause with the ROW_NUMBER window function.
+WITH OrderProductInfo AS (
+    SELECT
+        oi.OrderItemID,
+        p.ProductName,
+        p.Price,
+        ROW_NUMBER() OVER (PARTITION BY o.OrderDate::DATE ORDER BY oi.OrderItemID) AS Row_Num
+    FROM
+        "Order" o
+    JOIN
+        OrderItem oi ON o.OrderID = oi.OrderID
+    JOIN
+        Product p ON oi.ProductID = p.ProductID
+    WHERE
+        EXTRACT(YEAR FROM o.OrderDate) = 2020
+)
+SELECT
+    OrderItemID,
+    ProductName,
+    Price
+FROM
+    OrderProductInfo
+WHERE
+    Row_Num = 2
 
 ---19. What SQL query fetches customer names and order dates for orders placed in 2019 using the PARTITION BY clause with the FILTER/WHERE condition?
 
