@@ -30,8 +30,8 @@ CREATE TABLE OrderItem (
 
 CREATE TABLE Product (
     ProductID INT NOT NULL PRIMARY KEY,
-    ProductName VARCHAR(20),
-    Price INT NOT NULL
+    ProductName VARCHAR(50),
+    Price DECIMAL(10,2) NOT NULL
 );
 
 INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined)
