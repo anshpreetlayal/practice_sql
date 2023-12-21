@@ -23,7 +23,9 @@ CREATE TABLE OrderItem (
     OrderItemID INT NOT NULL PRIMARY KEY,
     OrderID INT NOT NULL,
     ProductID INT NOT NULL,
-    Quantity INT NOT NULL
+    Quantity INT NOT NULL,
+    FOREIGN KEY (OrderID) REFERENCES OrderInfo(OrderID),
+    FORIEGN KEY (ProductID) REFERENCES Product(ProductID)
 );
 
 CREATE TABLE Product (
