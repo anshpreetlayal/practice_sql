@@ -7,8 +7,9 @@ CREATE TABLE Customer (
     Phone VARCHAR(15),
     DateJoined DATE NOT NULL,
     Address VARCHAR (100),
-
-);
+    City VARCHAR (50),
+    Country VARCHAR (50)
+ );
 
 CREATE TABLE Order (
     OrderID INT NOT NULL PRIMARY KEY,
