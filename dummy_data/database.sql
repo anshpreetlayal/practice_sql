@@ -15,7 +15,8 @@ CREATE TABLE Order (
     OrderID INT NOT NULL PRIMARY KEY,
     CustomerID INT NOT NULL,
     OrderDate DATE NOT NULL,
-    TotalAmount INT NOT NULL
+    TotalAmount (DECIMAL 10,2) NOT NULL,
+    FOREIGN KEY (CustomerID) References Customer(CustomerID)
 );
 
 CREATE TABLE OrderItem (
