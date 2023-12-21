@@ -105,27 +105,6 @@ INNER JOIN
     Product p ON oi.ProductID = p.ProductID
 
 ---17. Retrieve orders with customer names and total order amounts placed in 2021 using the PARTITION BY clause with the SUM window function.
-WITH OrderInfo AS (
-    SELECT
-        o.OrderID,
-        c.FirstName,
-        c.LastName,
-        o.TotalAmount,
-        SUM(o.TotalAmount) OVER (PARTITION BY o.OrderDate::DATE) AS TotalOrderAmountPerYear
-    FROM
-        "Order" o
-    INNER JOIN
-        Customer c ON o.CustomerID = c.CustomerID
-    WHERE
-        EXTRACT(YEAR FROM o.OrderDate) = 2021
-)
-SELECT
-    OrderID,
-    FirstName,
-    LastName,
-
-FROM
-    OrderInfo
 
 ---18. Fetch product names and prices for each order item placed in 2020 using the PARTITION BY clause with the ROW_NUMBER window function.
 WITH OrderProductInfo AS (

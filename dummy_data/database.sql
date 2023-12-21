@@ -1,10 +1,13 @@
+--table to store customer information
 CREATE TABLE Customer (
     CustomerID INT NOT NULL PRIMARY KEY,
     FirstName VARCHAR(20),
     LastName VARCHAR(20),
     Email VARCHAR(50),
     Phone VARCHAR(15),
-    DateJoined DATE NOT NULL
+    DateJoined DATE NOT NULL,
+    Address VARCHAR (100),
+
 );
 
 CREATE TABLE Order (
