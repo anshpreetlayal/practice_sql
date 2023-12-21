@@ -34,7 +34,7 @@ CREATE TABLE Product (
     Price DECIMAL(10,2) NOT NULL
 );
 
-INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined)
+INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)
 VALUES
     (1, 'John', 'Doe', 'john@example.com', '123-345-334', '2021-03-14'),
     (2, 'Jane', 'Smith', 'jane@example.com', '122-456-754', '2021-04-12'),
