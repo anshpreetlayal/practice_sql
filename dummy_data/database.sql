@@ -83,6 +83,7 @@ VALUES
     (20, 20, '2023-01-29', 400.00);
 
 
+
 INSERT INTO OrderItem (OrderItemID, OrderID, ProductID, Quantity)
 VALUES
     (1, 1, 101, 3),
@@ -95,6 +96,16 @@ VALUES
     (8, 8, 108, 9),
     (9, 9, 109, 3),
     (10, 10, 110, 9);
+     (11, 11, 111, 5),
+    (12, 12, 112, 7),
+    (13, 13, 113, 2),
+    (14, 14, 114, 4),
+    (15, 15, 115, 8),
+    (16, 16, 116, 3),
+    (17, 17, 117, 6),
+    (18, 18, 118, 5),
+    (19, 19, 119, 10),
+    (20, 20, 120, 7);
 
 INSERT INTO Product (ProductID, ProductName, Price)
 VALUES
