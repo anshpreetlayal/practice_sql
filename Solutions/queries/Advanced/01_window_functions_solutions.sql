@@ -141,7 +141,7 @@ FROM
 JOIN
     Customer c ON o.CustomerID = c.CustomerID
 WHERE
-    EXTRACT(YEAR FROM o.OrderDate) = 2019
+    EXTRACT(YEAR FROM o.OrderDate) = 2019;
 
 ---20. How to get order details along with product names and quantities for orders placed in 2018 using the PARTITION BY clause with the SUM window function?
 WITH OrderProductDetails AS (
@@ -165,4 +165,4 @@ SELECT
     Quantity,
     TotalQuantity
 FROM
-    OrderProductDetails
+    OrderProductDetails;

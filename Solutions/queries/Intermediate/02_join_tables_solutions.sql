@@ -1,5 +1,5 @@
 --1. Retrieve orders with customer information.
-SELECT *
+SELECT o.OrderID, c.FirstName, c.LastName, c.Email, c.Phone
 FROM "Order" o
 JOIN Customer c ON o.CustomerID = c.CustomerID;
 
