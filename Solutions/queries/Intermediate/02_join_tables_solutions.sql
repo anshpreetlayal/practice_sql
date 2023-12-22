@@ -65,6 +65,9 @@ FROM Customer c
 JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 --14. Get product names and prices for each order item.
+SELECT p.ProductName, p.Price, oi.Quantity
+FROM Product p
+JOIN OrderItem oi ON p.ProductID = oi.ProductID;
 
 --15. Fetch customer names and order dates for orders placed in 2023.
 
