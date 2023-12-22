@@ -58,10 +58,11 @@ VALUES
     (18, 'Aiden', 'Taylor', 'aiden@example.com', '777-333-1111', '2020-09-19', '678 Cedar St', 'Riverside', 'USA'),
     (19, 'Chloe', 'Wilson', 'chloe@example.com', '999-111-5555', '2017-12-09', '789 Elm St', 'Lakewood', 'USA');
 
+-- Insert data into "Order" table
 INSERT INTO "Order" (OrderID, CustomerID, OrderDate, TotalAmount)
 VALUES
-    (1, 1, '2023-01-10', 500),
-    (2, 2, '2023-01-11', 750),
+    (1, 1, '2023-01-10', 500.00),
+    (2, 2, '2023-01-11', 750.00),
     (3, 3, '2023-01-12', 320),
     (4, 4, '2023-01-13', 600),
     (5, 5, '2023-01-14', 420),
