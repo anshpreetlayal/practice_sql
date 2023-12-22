@@ -14,6 +14,9 @@ FROM Customer c
 JOIN Order o ON c.CustomerID = o.CustomerID;
 
 --4. Get product details for each order item.
+SELECT oi.OrderItemID, oi.OrderID, oi.ProductID, oi.Quantity, p.ProductName, p.Price
+FROM OrderItem oi
+JOIN Product p ON oi.ProductID = p.ProductID;
 
 --5. Retrieve orders with customer names and order dates.
 
