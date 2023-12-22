@@ -11,6 +11,7 @@ CREATE TABLE Customer (
     Country VARCHAR (50)
  );
 
+--table to store order information
 CREATE TABLE Order (
     OrderID INT NOT NULL PRIMARY KEY,
     CustomerID INT NOT NULL,
@@ -19,6 +20,7 @@ CREATE TABLE Order (
     FOREIGN KEY (CustomerID) References Customer(CustomerID)
 );
 
+--table to store "OrderItem" information
 CREATE TABLE OrderItem (
     OrderItemID INT NOT NULL PRIMARY KEY,
     OrderID INT NOT NULL,
@@ -28,11 +30,13 @@ CREATE TABLE OrderItem (
     FORIEGN KEY (ProductID) REFERENCES Product(ProductID)
 );
 
+--table to store "product" information
 CREATE TABLE Product (
     ProductID INT NOT NULL PRIMARY KEY,
     ProductName VARCHAR(50),
     Price DECIMAL(10,2) NOT NULL
 );
+
 
 -- Insert data into Customer table
 INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)
@@ -83,7 +87,7 @@ VALUES
     (20, 20, '2023-01-29', 400.00);
 
 
-
+--Insert data into "OrderItem" table
 INSERT INTO OrderItem (OrderItemID, OrderID, ProductID, Quantity)
 VALUES
     (1, 1, 101, 3),
@@ -96,7 +100,7 @@ VALUES
     (8, 8, 108, 9),
     (9, 9, 109, 3),
     (10, 10, 110, 9);
-     (11, 11, 111, 5),
+    (11, 11, 111, 5),
     (12, 12, 112, 7),
     (13, 13, 113, 2),
     (14, 14, 114, 4),
@@ -107,6 +111,7 @@ VALUES
     (19, 19, 119, 10),
     (20, 20, 120, 7);
 
+-- insert data into Product table
 INSERT INTO Product (ProductID, ProductName, Price)
 VALUES
     (101, 'Widget A', 20),
