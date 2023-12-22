@@ -21,15 +21,8 @@
 --11. Fetch customer names and order dates for orders placed.
 
 --12. Get order details along with product names and quantities.
-SELECT o.OrderID, p.ProductName, oi.Quantity
-FROM "Order" o
-JOIN OrderItem oi ON o.OrderID = oi.OrderID
-JOIN Product p ON oi.ProductID = p.ProductID;
 
 --13. Retrieve orders with customer names and order total amounts.
-SELECT c.FirstName, c.LastName, o.TotalAmount
-FROM Customer c
-JOIN "Order" o ON c.CustomerID = o.CustomerID;
 
 --14. Get product names and prices for each order item.
 SELECT p.ProductName, p.Price, oi.Quantity
