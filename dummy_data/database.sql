@@ -37,10 +37,11 @@ CREATE TABLE Product (
 -- Insert data into Customer table
 INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)
 VALUES
-    (1, 'John', 'Doe', 'john@example.com', '123-345-334', '2021-03-14', '3 Bake Street', 'Mississauga', 'Canada'),
-    (2, 'Jane', 'Smith', 'jane@example.com', '122-456-754', '2021-04-12'),
-    (20, 'Alice', 'Johnson', 'alice@example.com', '456-567-347', '2020-09-19'),
-    (3, 'Katy', 'John', 'katy@example.com', '346-574-357', '2020-09-12'),
+    (1, 'John', 'Doe', 'john@example.com', '123-345-334', '2021-03-14', '123 Maple St', 'Springfield', 'USA'),
+    (2, 'Jane', 'Smith', 'jane@example.com', '122-456-754', '2021-04-12', '456 Oak St', 'Riverside', 'USA'),
+    (20, 'Alice', 'Johnson', 'alice@example.com', '456-567-347', '2020-09-19', '789 Pine St', 'Lakewood', 'USA'),
+    (3, 'Katy', 'John', 'katy@example.com', '346-574-357', '2020-09-12', '890 Elm St', 'Maplewood', 'USA'),
+    (4, 'Michael', 'Smith', 'michael@example.com', '555-123-4567', '2021-05-20', '234 Cedar St', 'Oakland', 'USA'),
     (4, 'Michael', 'Smith', 'michael@example.com', '555-123-4567', '2021-05-20'),
     (5, 'Emily', 'Johnson', 'emily@example.com', '987-654-3210', '2019-11-08'),
     (6, 'David', 'Brown', 'david@example.com', '123-456-7890', '2022-02-15'),
