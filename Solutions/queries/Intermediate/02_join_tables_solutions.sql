@@ -39,6 +39,9 @@ FROM Product p
 JOIN OrderItem oi ON p.ProductID = oi.ProductID;
 
 --9. Retrieve orders with customer email addresses.
+SELECT o.OrderID, c.Email
+FROM "Order" o
+JOIN Customer c ON o.CustomerID = c.CustomerID;
 
 --10. Get product names and prices for each order item.
 
