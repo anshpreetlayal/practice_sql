@@ -1,4 +1,18 @@
 --1. Retrieve the total number of orders placed by each customer.
+WITH OrderCount AS (
+    SELECT
+        c.CustomerID,
+        c.FirstName,
+        c.LastName,
+        COUNT(o.OrderID) AS TotalOrders
+    FROM
+        Customer c
+    LEFT JOIN
+        "Order" o ON c.CustomerID = o.CustomerID
+    GROUP BY
+        c.CustomerID, c.FirstName, c.LastName
+)
+SELECT * FROM OrderCount;
 
 --2. Calculate the total sales amount for each year.
 
