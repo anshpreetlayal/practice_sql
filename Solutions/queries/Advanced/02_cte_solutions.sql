@@ -79,6 +79,18 @@ SELECT
 FROM CumulativeQuantity;
 
 --6. Rank customers based on their total order amounts.
+WITH CustomerOrderTotal AS (
+    SELECT
+        CustomerID,
+        SUM(TotalAmount) AS TotalOrderAmount
+    FROM "Order"
+    GROUP BY CustomerID
+)
+SELECT
+    CustomerID,
+    TotalOrderAmount,
+    RANK() OVER (ORDER BY TotalOrderAmount DESC) AS CustomerRank
+FROM CustomerOrderTotal;
 
 --7. Fetch product details along with order quantities.
 
