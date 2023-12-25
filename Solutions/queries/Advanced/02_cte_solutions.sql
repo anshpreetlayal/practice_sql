@@ -15,6 +15,16 @@ WITH OrderCount AS (
 SELECT * FROM OrderCount;
 
 --2. Calculate the total sales amount for each year.
+WITH YearlySales AS (
+    SELECT
+        YEAR(OrderDate) AS OrderYear,
+        SUM(TotalAmount) AS TotalSalesAmount
+    FROM "Order"
+    GROUP BY YEAR(OrderDate)
+)
+SELECT OrderYear, TotalSalesAmount
+FROM YearlySales
+ORDER BY OrderYear;
 
 --3. Find the average price of products within their respective categories.
 
