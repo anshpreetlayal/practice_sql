@@ -28,6 +28,7 @@ ORDER BY OrderYear;
 
 --3. Find the average price of products within their respective categories.
 
+
 --4. Assign row numbers to customers ordered by their joining dates.
 
 --5. Get the cumulative sum of product quantities ordered.

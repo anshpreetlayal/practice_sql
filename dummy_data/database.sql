@@ -37,6 +37,9 @@ CREATE TABLE Product (
     Price DECIMAL(10,2) NOT NULL
 );
 
+ALTER TABLE Product(
+ADD COLUMN CategoryID INT);
+
 
 -- Insert data into Customer table
 INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)
@@ -134,3 +137,4 @@ VALUES
     (118, 'Toy C', 15),
     (119, 'Electronics 1', 100),
     (120, 'Electronics 2', 120);
+
