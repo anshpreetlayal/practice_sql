@@ -151,11 +151,15 @@ WITH  TotalOrders AS (
      FROM
          Customer C
      JOIN
-        Order O ON C.CustomerID = O.CustomerID
+        "Order" O ON C.CustomerID = O.CustomerID
 )
 SELECT * FROM TotalOrders;
 
 --11. Calculate the running total of order amounts for each customer.
+WITH  TotalOrderAmounts AS (
+       SELECT
+
+)
 
 --12. Find the maximum order amount placed by each customer.
 
