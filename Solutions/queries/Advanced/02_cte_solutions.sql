@@ -93,6 +93,18 @@ SELECT
 FROM CustomerOrderTotal;
 
 --7. Fetch product details along with order quantities.
+WITH OrderProductDetails AS (
+    SELECT
+        OI.OrderItemID,
+        OI.OrderID,
+        OI.ProductID,
+        P.ProductName,
+        P.Price,
+        OI.Quantity
+    FROM OrderItem OI
+    INNER JOIN Product P ON OI.ProductID = P.ProductID
+)
+SELECT * FROM OrderProductDetails;
 
 --8. Retrieve customer information for orders with total amounts.
 
