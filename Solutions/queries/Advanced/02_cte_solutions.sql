@@ -107,8 +107,39 @@ WITH OrderProductDetails AS (
 SELECT * FROM OrderProductDetails;
 
 --8. Retrieve customer information for orders with total amounts.
+WITH CustomerOrders AS (
+    SELECT
+        C.CustomerID,
+        C.FirstName,
+        C.LastName,
+        C.Email,
+        C.Phone,
+        O.OrderID,
+        O.TotalAmount
+    FROM
+        Customer C
+    JOIN
+        "Order" O ON C.CustomerID = O.CustomerID
+    WHERE
+        O.TotalAmount IS NOT NULL
+)
+SELECT * FROM CustomerOrders;
 
 --9. Fetch product names and prices for each order item.
+WITH OrderProductDetails AS (
+    SELECT
+        OI.OrderItemID,
+        OI.OrderID,
+        OI.ProductID,
+        OI.Quantity,
+        P.ProductName,
+        P.Price
+    FROM
+        OrderItem OI
+    JOIN
+        Product P ON OI.ProductID = P.ProductID
+)
+SELECT * FROM OrderProductDetails;
 
 --10. Determine the count of orders placed by each customer in a specific month.
 
