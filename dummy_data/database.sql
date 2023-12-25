@@ -37,9 +37,6 @@ CREATE TABLE Product (
     Price DECIMAL(10,2) NOT NULL
 );
 
-ALTER TABLE Product(
-ADD COLUMN CategoryID INT);
-
 
 -- Insert data into Customer table
 INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)

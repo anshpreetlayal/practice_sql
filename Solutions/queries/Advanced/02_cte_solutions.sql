@@ -27,7 +27,16 @@ FROM YearlySales
 ORDER BY OrderYear;
 
 --3. Find the average price of products within their respective categories.
-
+WITH ProductCategories AS (
+    SELECT
+        SUBSTRING_INDEX(ProductName, ' ', 1) AS Category,
+        Price
+    FROM Product
+)
+SELECT Category, AVG(Price) AS AveragePrice
+FROM ProductCategories
+GROUP BY Category
+ORDER BY Category;
 
 --4. Assign row numbers to customers ordered by their joining dates.
 
