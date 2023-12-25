@@ -39,6 +39,26 @@ GROUP BY Category
 ORDER BY Category;
 
 --4. Assign row numbers to customers ordered by their joining dates.
+WITH RankedCustomers AS (
+    SELECT
+        CustomerID,
+        FirstName,
+        LastName,
+        Email,
+        Phone,
+        DateJoined,
+        ROW_NUMBER() OVER (ORDER BY DateJoined) AS RowNum
+    FROM Customer
+)
+SELECT
+    CustomerID,
+    FirstName,
+    LastName,
+    Email,
+    Phone,
+    DateJoined,
+    RowNum
+FROM RankedCustomers;
 
 --5. Get the cumulative sum of product quantities ordered.
 
