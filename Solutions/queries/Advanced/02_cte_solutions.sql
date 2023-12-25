@@ -1,4 +1,3 @@
-
 --1. Retrieve the total number of orders placed by each customer.
 
 --2. Calculate the total sales amount for each year.

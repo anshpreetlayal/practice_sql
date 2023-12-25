@@ -1,0 +1,39 @@
+--1. How would you create an index on the 'ProductName' column of the 'Product' table?
+
+--2. Explain the significance of indexing in a database and its impact on query performance.
+
+--3. What types of indexes can be created in SQL? Provide examples for each.
+
+--4. Describe the process of dropping an index from a table in SQL.
+
+--5. How do you add a composite index involving multiple columns in a table?
+
+--6. Explain the difference between a clustered and non-clustered index.
+
+--7. How does indexing affect INSERT, UPDATE, and DELETE operations on a table?
+
+--8. Illustrate how you'd check if an index exists on a particular table and column in SQL.
+
+--9. What are the key factors to consider before creating an index on a column?
+
+--10. Explain the impact of indexing on sorting and searching operations in SQL.
+
+--11. How do you identify unused or redundant indexes in a database?
+
+--12. Describe the process of rebuilding or reorganizing an index in SQL.
+
+--13. Explain the concept of covering indexes and their benefits in query optimization.
+
+--14. What are the limitations or drawbacks of using indexes in a database?
+
+--15. How do you ensure index statistics are up-to-date and accurate?
+
+--16. Explain the role of index hints in SQL query optimization.
+
+--17. Describe scenarios where indexing might not be beneficial or recommended.
+
+--18. How does indexing affect the execution plan of a query in SQL?
+
+--19. Discuss the process of disabling and enabling an index in SQL.
+
+--20. Fetch the top 5 customers with the highest total order amounts.
