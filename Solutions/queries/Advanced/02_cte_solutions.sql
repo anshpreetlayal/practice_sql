@@ -182,6 +182,15 @@ WITH MaxOrderAmounts AS (
 SELECT * FROM MaxOrderAmounts;
 
 --13. Retrieve the minimum and maximum dates of orders for each customer.
+WITH MinMaxOrderDates AS (
+    SELECT
+        CustomerID,
+        MIN(OrderDate) AS MinOrderDate,
+        MAX(OrderDate) AS MaxOrderDate
+    FROM "Order"
+    GROUP BY CustomerID
+)
+SELECT * FROM MinMaxOrderDates;
 
 --14. Get the average quantity of products ordered by each customer.
 
