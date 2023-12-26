@@ -213,8 +213,24 @@ WITH RankedCustomers AS (
 SELECT * FROM RankedCustomers;
 
 --16. Calculate the total sales amount for each product.
+WITH ProductSalesAmount AS (
+    SELECT
+        ProductID,
+        SUM(Price * Quantity) AS TotalSalesAmount
+    FROM OrderItem
+    GROUP BY ProductID
+)
+SELECT * FROM ProductSalesAmount;
 
 --17. Retrieve the count of orders placed on each day of the week.
+WITH OrdersByDayOfWeek AS (
+    SELECT
+        EXTRACT(DOW FROM OrderDate) AS DayOfWeek,
+        COUNT(*) AS OrderCount
+    FROM "Order"
+    GROUP BY EXTRACT(DOW FROM OrderDate)
+)
+SELECT * FROM OrdersByDayOfWeek;
 
 --18. Find the total number of products in different categories.
 
