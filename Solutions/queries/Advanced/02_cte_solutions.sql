@@ -31,7 +31,7 @@ WITH ProductCategories AS (
     SELECT
         SUBSTRING_INDEX(ProductName, ' ', 1) AS Category,
         Price
-    FROM Product
+    FROM "Product"
 )
 SELECT Category, AVG(Price) AS AveragePrice
 FROM ProductCategories
@@ -48,7 +48,7 @@ WITH RankedCustomers AS (
         Phone,
         DateJoined,
         ROW_NUMBER() OVER (ORDER BY DateJoined) AS RowNum
-    FROM Customer
+    FROM "Customer"
 )
 SELECT
     CustomerID,
@@ -68,7 +68,7 @@ WITH CumulativeQuantity AS (
         ProductID,
         Quantity,
         SUM(Quantity) OVER (ORDER BY OrderItemID) AS CumulativeSum
-    FROM OrderItem
+    FROM "OrderItem"
 )
 SELECT
     OrderItemID,
@@ -225,15 +225,42 @@ SELECT * FROM ProductSalesAmount;
 --17. Retrieve the count of orders placed on each day of the week.
 WITH OrdersByDayOfWeek AS (
     SELECT
-        EXTRACT(DOW FROM OrderDate) AS DayOfWeek,
-        COUNT(*) AS OrderCount
+        EXTRACT(DOW  FROM OrderDate) AS DayOfWeek,
+        COUNT (*) AS OrderCount
     FROM "Order"
     GROUP BY EXTRACT(DOW FROM OrderDate)
 )
 SELECT * FROM OrdersByDayOfWeek;
 
---18. Find the total number of products in different categories.
 
---19. Determine the count of distinct products ordered by each customer.
+-- 18. Find the total number of products in different categories.
+WITH ProductCategoryCount AS (
+    SELECT
+        COUNT(*) AS TotalProducts,
+        CategoryName
+    FROM "Product"
+    GROUP BY CategoryName
+)
+SELECT * FROM ProductCategoryCount;
 
---20. Fetch the top 5 customers with the highest total order amounts.
+-- 19. Determine the count of distinct products ordered by each customer.
+WITH DistinctProductsOrdered AS (
+    SELECT
+        CustomerID,
+        COUNT(DISTINCT ProductID) AS DistinctProductCount
+    FROM OrderItem
+    GROUP BY CustomerID
+)
+SELECT * FROM DistinctProductsOrdered;
+
+-- 20. Fetch the top 5 customers with the highest total order amounts.
+WITH TopCustomers AS (
+    SELECT
+        O.CustomerID,
+        SUM(O.TotalAmount) AS TotalOrderAmount
+    FROM "Order" O
+    GROUP BY O.CustomerID
+    ORDER BY TotalOrderAmount DESC
+    LIMIT 5
+)
+SELECT * FROM TopCustomers;
