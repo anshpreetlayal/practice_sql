@@ -193,6 +193,14 @@ WITH MinMaxOrderDates AS (
 SELECT * FROM MinMaxOrderDates;
 
 --14. Get the average quantity of products ordered by each customer.
+WITH AvgProductQuantity AS (
+    SELECT
+        O.CustomerID,
+        AVG(Quantity) AS AvgQuantity
+    FROM OrderItem O
+    GROUP BY O.CustomerID
+)
+SELECT * FROM AvgProductQuantity;
 
 --15. Rank customers based on the number of orders they've placed.
 
