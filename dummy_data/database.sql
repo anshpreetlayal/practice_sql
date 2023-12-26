@@ -1,8 +1,8 @@
 --table to store customer information
 CREATE TABLE Customer (
     CustomerID INT NOT NULL PRIMARY KEY,
-    FirstName VARCHAR(20),
-    LastName VARCHAR(20),
+    FirstName VARCHAR(20) UNIQUE,
+    LastName VARCHAR(20) UNIQUE,
     Email VARCHAR(50),
     Phone VARCHAR(15),
     DateJoined DATE NOT NULL,
