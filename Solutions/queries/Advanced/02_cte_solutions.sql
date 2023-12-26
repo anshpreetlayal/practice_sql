@@ -172,6 +172,14 @@ SELECT * FROM TotalOrderAmounts;
 
 
 --12. Find the maximum order amount placed by each customer.
+WITH MaxOrderAmounts AS (
+    SELECT
+        CustomerID,
+        MAX(TotalAmount) AS MaxOrderAmount
+    FROM "Order"
+    GROUP BY CustomerID
+)
+SELECT * FROM MaxOrderAmounts;
 
 --13. Retrieve the minimum and maximum dates of orders for each customer.
 
