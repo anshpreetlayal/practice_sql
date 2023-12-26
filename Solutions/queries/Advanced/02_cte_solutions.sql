@@ -203,6 +203,14 @@ WITH AvgProductQuantity AS (
 SELECT * FROM AvgProductQuantity;
 
 --15. Rank customers based on the number of orders they've placed.
+WITH RankedCustomers AS (
+    SELECT
+        CustomerID,
+        ROW_NUMBER() OVER (ORDER BY COUNT(*) DESC) AS Rank
+    FROM "Order"
+    GROUP BY CustomerID
+)
+SELECT * FROM RankedCustomers;
 
 --16. Calculate the total sales amount for each product.
 
