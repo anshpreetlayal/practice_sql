@@ -44,13 +44,15 @@ CREATE TABLE OrderItem (
 CREATE INDEX idx_orderitem_orderid ON OrderItem (OrderID);
 CREATE INDEX idx_orderitem_productid ON OrderItem (ProductID);
 
---table to store "product" information
+-- Table to store "product" information
 CREATE TABLE Product (
     ProductID INT NOT NULL PRIMARY KEY,
     ProductName VARCHAR(50),
     Price DECIMAL(10,2) NOT NULL
 );
 
+-- Added index to Product table
+CREATE INDEX idx_product_productname ON Product (ProductName);
 
 -- Insert data into Customer table
 INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)
