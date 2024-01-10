@@ -1,4 +1,4 @@
---table to store customer information
+-- Table to store customer information
 CREATE TABLE Customer (
     CustomerID INT NOT NULL PRIMARY KEY,
     FirstName VARCHAR(20) UNIQUE,
@@ -9,7 +9,14 @@ CREATE TABLE Customer (
     Address VARCHAR (100),
     City VARCHAR (50),
     Country VARCHAR (50)
- );
+);
+
+-- Adding indexes to Customer table
+CREATE INDEX idx_customer_firstname ON Customer (FirstName);
+CREATE INDEX idx_customer_lastname ON Customer (LastName);
+CREATE INDEX idx_customer_email ON Customer (Email);
+CREATE INDEX idx_customer_phone ON Customer (Phone);
+CREATE INDEX idx_customer_datejoined ON Customer (DateJoined);
 
 --table to store order information
 CREATE TABLE Order (
