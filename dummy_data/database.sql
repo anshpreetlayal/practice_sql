@@ -27,18 +27,22 @@ CREATE TABLE "Order" (
     FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
 );
 
--- Adding index to Order table
+-- Added index to Order table
 CREATE INDEX idx_order_orderdate ON "Order" (OrderDate);
 
---table to store "OrderItem" information
+-- Table to store "OrderItem" information
 CREATE TABLE OrderItem (
     OrderItemID INT NOT NULL PRIMARY KEY,
     OrderID INT NOT NULL,
     ProductID INT NOT NULL,
     Quantity INT NOT NULL,
-    FOREIGN KEY (OrderID) REFERENCES OrderInfo(OrderID),
-    FORIEGN KEY (ProductID) REFERENCES Product(ProductID)
+    FOREIGN KEY (OrderID) REFERENCES "Order"(OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
 );
+
+-- Added indexes to OrderItem table
+CREATE INDEX idx_orderitem_orderid ON OrderItem (OrderID);
+CREATE INDEX idx_orderitem_productid ON OrderItem (ProductID);
 
 --table to store "product" information
 CREATE TABLE Product (
