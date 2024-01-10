@@ -11,21 +11,24 @@ CREATE TABLE Customer (
     Country VARCHAR (50)
 );
 
--- Adding indexes to Customer table
+-- Added indexes to Customer table
 CREATE INDEX idx_customer_firstname ON Customer (FirstName);
 CREATE INDEX idx_customer_lastname ON Customer (LastName);
 CREATE INDEX idx_customer_email ON Customer (Email);
 CREATE INDEX idx_customer_phone ON Customer (Phone);
 CREATE INDEX idx_customer_datejoined ON Customer (DateJoined);
 
---table to store order information
-CREATE TABLE Order (
+-- table to store order information
+CREATE TABLE "Order" (
     OrderID INT NOT NULL PRIMARY KEY,
     CustomerID INT NOT NULL,
     OrderDate DATE NOT NULL,
-    TotalAmount (DECIMAL 10,2) NOT NULL,
-    FOREIGN KEY (CustomerID) References Customer(CustomerID)
+    TotalAmount DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
 );
+
+-- Adding index to Order table
+CREATE INDEX idx_order_orderdate ON "Order" (OrderDate);
 
 --table to store "OrderItem" information
 CREATE TABLE OrderItem (
