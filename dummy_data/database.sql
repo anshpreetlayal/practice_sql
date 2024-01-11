@@ -127,27 +127,26 @@ VALUES
     (2020, 1020, 220, 7);
 
 
--- insert data into Product table
+--Insert data into Product table
 INSERT INTO Product (ProductID, ProductName, Price)
 VALUES
-    (101, 'Widget A', 20),
-    (102, 'Widget B', 25),
-    (103, 'Widget C', 18),
-    (104, 'Gizmo X', 30),
-    (105, 'Gizmo Y', 35),
-    (106, 'Gizmo Z', 40),
-    (107, 'Gadget 1', 50),
-    (108, 'Gadget 2', 55),
-    (109, 'Gadget 3', 60),
-    (110, 'Accessory A', 10),
-    (111, 'Accessory B', 12),
-    (112, 'Accessory C', 15),
-    (113, 'Tool 1', 25),
-    (114, 'Tool 2', 30),
-    (115, 'Tool 3', 35),
-    (116, 'Toy A', 8),
-    (117, 'Toy B', 12),
-    (118, 'Toy C', 15),
-    (119, 'Electronics 1', 100),
-    (120, 'Electronics 2', 120);
-
+    (201, 'Widget A', 20),
+    (202, 'Widget B', 25),
+    (203, 'Widget C', 18),
+    (204, 'Gizmo X', 30),
+    (205, 'Gizmo Y', 35),
+    (206, 'Gizmo Z', 40),
+    (207, 'Gadget 1', 50),
+    (208, 'Gadget 2', 55),
+    (209, 'Gadget 3', 60),
+    (210, 'Accessory A', 10),
+    (211, 'Accessory B', 12),
+    (212, 'Accessory C', 15),
+    (213, 'Tool 1', 25),
+    (214, 'Tool 2', 30),
+    (215, 'Tool 3', 35),
+    (216, 'Toy A', 8),
+    (217, 'Toy B', 12),
+    (218, 'Toy C', 15),
+    (219, 'Electronics 1', 100),
+    (220, 'Electronics 2', 120);
