@@ -2,17 +2,14 @@
 
 ## Welcome to the SQL Practice Repository!
 
-This repository is your go-to resource for enhancing your SQL skills. We've organized a set of exercises to cover different proficiency levels. Let's get started on your SQL journey!
 
-## Folder Structure
-
-- **[queries](queries):**
-  - **[basic](queries/basic):**
+- **[queries](queries.basic):**
+  - **[basic](queries.basic):**
     - `01_select_all.sql`: Retrieve all columns from a table.
     - `02_select_columns.sql`: Select specific columns from a table.
     - `03_where_clause.sql`: Filter data using the WHERE clause.
     - ...
-  - **[intermediate](queries/intermediate):**
+  - **[intermediate](Intermediate):**
     - `01_group_by.sql`: Practice grouping data.
     - `02_join_tables.sql`: Perform table joins.
     - `03_subqueries.sql`: Utilize subqueries effectively.
@@ -23,7 +20,7 @@ This repository is your go-to resource for enhancing your SQL skills. We've orga
     - `03_indexing.sql`: Optimize queries with indexing.
     - ...
 
-- **[solutions](solutions):**
+- **[solutions](Solutions.queries):**
   - **[basic](solutions/basic):**
     - `01_select_all_solution.sql`: Solution for retrieving all columns.
     - `02_select_columns_solution.sql`: Solution for selecting specific columns.
