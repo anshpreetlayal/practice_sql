@@ -62,28 +62,49 @@ CREATE TABLE Product (
 CREATE INDEX idx_product_productname ON Product (ProductName);
 
 -- Insert data into Customer table
-INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, Address, City, Country)
+INSERT INTO Customer (CustomerID, FirstName, LastName, Email, Phone, DateJoined, AddressID)
 VALUES
-    (1, 'John', 'Doe', 'john@example.com', '123-345-334', '2021-03-14', '123 Maple St', 'Springfield', 'USA'),
-    (2, 'Jane', 'Smith', 'jane@example.com', '122-456-754', '2021-04-12', '456 Oak St', 'Riverside', 'USA'),
-    (20, 'Alice', 'Johnson', 'alice@example.com', '456-567-347', '2020-09-19', '789 Pine St', 'Lakewood', 'USA'),
-    (3, 'Katy', 'John', 'katy@example.com', '346-574-357', '2020-09-12', '890 Elm St', 'Maplewood', 'USA'),
-    (4, 'Michael', 'Smith', 'michael@example.com', '555-123-4567', '2021-05-20', '234 Cedar St', 'Oakland', 'USA'),
-     (5, 'Emily', 'Johnson', 'emily@example.com', '987-654-3210', '2019-11-08', '567 Birch St', 'Brentwood', 'USA'),
-    (6, 'David', 'Brown', 'david@example.com', '123-456-7890', '2022-02-15', '678 Willow St', 'Salem', 'USA'),
-    (7, 'Sophia', 'Williams', 'sophia@example.com', '111-222-3333', '2020-08-04', '789 Oak St', 'Beverly Hills', 'USA'),
-    (8, 'James', 'Davis', 'james@example.com', '444-555-6666', '2021-12-01', '234 Maple St', 'Springfield', 'USA'),
-    (9, 'Olivia', 'Miller', 'olivia@example.com', '777-888-9999', '2018-06-17', '345 Pine St', 'Brentwood', 'USA'),
-    (10, 'Ethan', 'Wilson', 'ethan@example.com', '666-999-1111', '2019-03-25', '456 Cedar St', 'Riverside', 'USA'),
-    (11, 'Ava', 'Moore', 'ava@example.com', '333-777-2222', '2022-09-10', '567 Oak St', 'Lakewood', 'USA'),
-    (12, 'William', 'Lee', 'william@example.com', '123-789-4567', '2020-07-29', '678 Elm St', 'Maplewood', 'USA'),
-    (13, 'Emma', 'Anderson', 'emma@example.com', '888-555-4444', '2017-04-12', '789 Maple St', 'Beverly Hills', 'USA'),
-    (14, 'Mia', 'Thompson', 'mia@example.com', '222-333-4444', '2022-11-03', '234 Birch St', 'Springfield', 'USA'),
-    (15, 'Liam', 'White', 'liam@example.com', '555-777-8888', '2019-10-17', '345 Cedar St', 'Riverside', 'USA'),
-    (16, 'Isabella', 'Harris', 'isabella@example.com', '666-444-2222', '2021-06-28', '456 Oak St', 'Lakewood', 'USA'),
-    (17, 'Noah', 'Martin', 'noah@example.com', '123-987-6543', '2018-09-14', '567 Pine St', 'Maplewood', 'USA'),
-    (18, 'Aiden', 'Taylor', 'aiden@example.com', '777-333-1111', '2020-09-19', '678 Cedar St', 'Riverside', 'USA'),
-    (19, 'Chloe', 'Wilson', 'chloe@example.com', '999-111-5555', '2017-12-09', '789 Elm St', 'Lakewood', 'USA');
+    (1, 'John', 'Doe', 'john@example.com', '123-345-334', '2021-03-14', 1),
+    (2, 'Jane', 'Smith', 'jane@example.com', '122-456-754', '2021-04-12', 2),
+    (3, 'Katy', 'John', 'katy@example.com', '346-574-357', '2020-09-12', 3),
+    (4, 'Michael', 'Smith', 'michael@example.com', '555-123-4567', '2021-05-20', 4),
+    (5, 'Emily', 'Johnson', 'emily@example.com', '987-654-3210', '2019-11-08', 5),
+    (6, 'David', 'Brown', 'david@example.com', '123-456-7890', '2022-02-15', 6),
+    (7, 'Sophia', 'Williams', 'sophia@example.com', '111-222-3333', '2020-08-04', 7),
+    (8, 'James', 'Davis', 'james@example.com', '444-555-6666', '2021-12-01', 8),
+    (9, 'Olivia', 'Miller', 'olivia@example.com', '777-888-9999', '2018-06-17', 9),
+    (10, 'Ethan', 'Wilson', 'ethan@example.com', '666-999-1111', '2019-03-25', 10),
+    (11, 'Ava', 'Moore', 'ava@example.com', '333-777-2222', '2022-09-10', 11),
+    (12, 'William', 'Lee', 'william@example.com', '123-789-4567', '2020-07-29', 12),
+    (13, 'Emma', 'Anderson', 'emma@example.com', '888-555-4444', '2017-04-12', 13),
+    (14, 'Mia', 'Thompson', 'mia@example.com', '222-333-4444', '2022-11-03', 14),
+    (15, 'Liam', 'White', 'liam@example.com', '555-777-8888', '2019-10-17', 15),
+    (16, 'Isabella', 'Harris', 'isabella@example.com', '666-444-2222', '2021-06-28', 1),
+    (17, 'Noah', 'Martin', 'noah@example.com', '123-987-6543', '2018-09-14', 2),
+    (18, 'Aiden', 'Taylor', 'aiden@example.com', '777-333-1111', '2020-09-19', 3),
+    (19, 'Chloe', 'Wilson', 'chloe@example.com', '999-111-5555', '2017-12-09', 4),
+    (20, 'Alice', 'Johnson', 'alice@example.com', '456-567-347', '2020-09-19', 5);
+
+
+-- Insert data into Address table
+INSERT INTO Address (AddressID, Address, City, Country)
+VALUES
+    (1, '123 Maple St', 'Springfield', 'USA'),
+    (2, '456 Oak St', 'Riverside', 'USA'),
+    (3, '789 Pine St', 'Lakewood', 'USA'),
+    (4, '890 Elm St', 'Maplewood', 'USA'),
+    (5, '234 Cedar St', 'Oakland', 'USA'),
+    (6, '567 Birch St', 'Brentwood', 'USA'),
+    (7, '678 Willow St', 'Salem', 'USA'),
+    (8, '789 Oak St', 'Beverly Hills', 'USA'),
+    (9, '234 Maple St', 'Springfield', 'USA'),
+    (10, '345 Pine St', 'Brentwood', 'USA'),
+    (11, '456 Cedar St', 'Riverside', 'USA'),
+    (12, '567 Oak St', 'Lakewood', 'USA'),
+    (13, '678 Elm St', 'Maplewood', 'USA'),
+    (14, '789 Maple St', 'Beverly Hills', 'USA'),
+    (15, '234 Birch St', 'Springfield', 'USA');
+
 
 -- Insert data into "Order" table
 INSERT INTO "Order" (OrderID, CustomerID, OrderDate, TotalAmount)
