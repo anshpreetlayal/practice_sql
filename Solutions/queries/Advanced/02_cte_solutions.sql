@@ -187,13 +187,16 @@ SELECT * FROM MaxOrderAmounts;
 --13. Retrieve the minimum and maximum dates of orders for each customer.
 WITH MinMaxOrderDates AS (
     SELECT
-        CustomerID,
-        MIN(OrderDate) AS MinOrderDate,
-        MAX(OrderDate) AS MaxOrderDate
-    FROM "Order"
-    GROUP BY CustomerID
+        C.FirstName,
+        C.LastName,
+        MIN(O.OrderDate) AS MinOrderDate,
+        MAX(O.OrderDate) AS MaxOrderDate
+    FROM "Order" O
+    JOIN Customer C ON O.CustomerID = C.CustomerID
+    GROUP BY O.CustomerID, C.FirstName, C.LastName
 )
 SELECT * FROM MinMaxOrderDates;
+
 
 --14. Get the average quantity of products ordered by each customer.
 WITH AvgProductQuantity AS (
@@ -209,11 +212,12 @@ SELECT * FROM AvgProductQuantity;
 WITH RankedCustomers AS (
     SELECT
         CustomerID,
-        ROW_NUMBER() OVER (ORDER BY COUNT(*) DESC) AS Rank
-    FROM "Order"
+        ROW_NUMBER() OVER (ORDER BY COUNT(DISTINCT o.OrderID) DESC) AS Rank
+    FROM "Order" o
     GROUP BY CustomerID
 )
 SELECT * FROM RankedCustomers;
+
 
 --16. Calculate the total sales amount for each product.
 WITH ProductSalesAmount AS (
