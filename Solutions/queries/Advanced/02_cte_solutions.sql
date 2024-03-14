@@ -142,18 +142,21 @@ WITH OrderProductDetails AS (
 SELECT * FROM OrderProductDetails;
 
 --10. Determine the count of orders placed by each customer in a specific month.
-WITH  TotalOrders AS (
+WITH TotalOrders AS (
      SELECT
         C.FirstName,
         C.LastName,
-        O.OrderDate,
-        O.TotalAmount
+        COUNT(O.OrderID) AS OrderCount
      FROM
          Customer C
      JOIN
         "Order" O ON C.CustomerID = O.CustomerID
+     WHERE
+        EXTRACT(MONTH FROM O.OrderDate) = 1
+     GROUP BY C.FirstName, C.LastName
 )
 SELECT * FROM TotalOrders;
+
 
 --11. Calculate the running total of order amounts for each customer.
 WITH TotalOrderAmounts AS (
