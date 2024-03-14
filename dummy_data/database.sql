@@ -4,8 +4,15 @@ CREATE TABLE Customer (
     FirstName VARCHAR(20) UNIQUE,
     LastName VARCHAR(20) UNIQUE,
     Email VARCHAR(50),
-    Phone VARCHAR(15),
+    Phone VARCHAR(50),
     DateJoined DATE NOT NULL,
+    AddressID INT,
+    FOREIGN KEY (AddressID) REFERENCES Address(AddressID)
+);
+
+-- Table to store customer addresses
+CREATE TABLE Address (
+    AddressID INT NOT NULL PRIMARY KEY,
     Address VARCHAR (100),
     City VARCHAR (50),
     Country VARCHAR (50)
