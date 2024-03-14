@@ -23,7 +23,7 @@ GROUP BY YEAR(OrderDate);
 ---5. Get the total quantity sold for each product.
 SELECT OrderID, SUM(Quantity) AS TotalQuantity
 FROM OrderItem
-GROUP BY  OrderID;
+GROUP BY ProductID;
 
 ---6. Find the average order amount for each customer.
 SELECT CustomerID, AVG(TotalAmount) AS AverageOrderAmount
@@ -33,20 +33,21 @@ GROUP BY CustomerID;
 ---7. Retrieve the count of products within different price ranges.
 SELECT
      CASE
-        WHEN PRICE BETWEEN 0 AND 50 THEN '0-50'
-        WHEN PRICE BETWEEN  50  AND 100 THEN '50-100'
-        WHEN PRICE BETWEEN 100 AND 140 THEN '100-140'
+        WHEN Price BETWEEN 0 AND 50 THEN '0-50'
+        WHEN Price BETWEEN  50  AND 100 THEN '50-100'
+        WHEN Price BETWEEN 100 AND 140 THEN '100-140'
         ELSE 'Above 150'
-     END AS PriceRange
-     Count(*) AS ProductsCount
+     END AS PriceRange,
+     COUNT(*) AS ProductsCount
 FROM Product
 GROUP BY
      CASE
-         WHEN PRICE BETWEEN 0 AND 50 THEN '0-50'
-         WHEN PRICE BETWEEN  50  AND 100 THEN '50-100'
-         WHEN PRICE BETWEEN 100 AND 140 THEN '100-140'
+         WHEN Price BETWEEN 0 AND 50 THEN '0-50'
+         WHEN Price BETWEEN  50  AND 100 THEN '50-100'
+         WHEN Price BETWEEN 100 AND 140 THEN '100-140'
          ELSE 'Above 150'
      END;
+
 
 
 ---8. Get the earliest order date for each customer.
@@ -116,5 +117,8 @@ GROUP BY DAY(OrderDate);
 
 
 ---20. Find the total number of products in different categories.
+SELECT CategoryName, COUNT(*) AS TotalProducts
+FROM Product
+GROUP BY CategoryName;
 
 
