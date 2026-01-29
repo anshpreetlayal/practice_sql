@@ -38,6 +38,5 @@
     - ...
 
 
-Embark on your SQL journey and enjoy coding! 🚀
 
 
